@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hair Dryer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/select2/css/select2.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/flag-icon/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/lightbox/ekko-lightbox.css" />
+    <link rel="stylesheet" href="assets/css/hairdryer.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Start Top Nav -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
+      id="hairdryer_nav_top"
+    >
+      <div class="container">
+        <div class="w-100 d-flex justify-content-between flex-wrap">
+          <div
+            class="d-flex flex-wrap text-align justify-content-center align-items-center"
+          >
+            <div class="pr-2 mr-2">
+              <i class="fas fa-truck mr-2"></i>
+              <a class="navbar-sm-brand text-decoration-none" href="#"
+                >FREE SHIPPING</a
+              >
+            </div>
+            <div class="pr-2 mr-2">
+              <i class="fas fa-certificate mr-2"></i>
+              <a class="navbar-sm-brand text-decoration-none" href="#"
+                >100% MONEY BACK GUARANTEE</a
+              >
+            </div>
+            <div class="pr-2 mr-2">
+              <i class="fas fa-undo-alt mr-2"></i>
+              <a class="navbar-sm-brand text-decoration-none" href="#"
+                >EASY RERTURN</a
+              >
+            </div>
+            <div class="pr-2 mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="pr-2 mr-2">
+              <i class="fas fa-mobile-alt mr-2"></i>
+              <a
+                class="navbar-sm-brand text-decoration-none"
+                href="tel:+44 123 456 789"
+                >+44 123 456 789</a
+              >
+            </div>
+          </div>
+          <div class="d-flex select-group flex-row align-items-center">
+            <select class="d-inline-block" name="currency" id="currency">
+              <option value="eur">EUR (&#128;)</option>
+              <option value="gbp">GBP (&#163;)</option>
+              <option value="usd">USD (&#36;)</option>
+              <option value="cad">Canadian dollar</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+            </select>
+            <div class="dropdown d-inline-block ml-3 dropdown-country-language">
+              <div
+                class="dropdown-toggle"
+                id="country-language"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="flag-icon flag-icon-us"></span>
+                &nbsp;/ English
+              </div>
+              <div
+                id="country-language-menu"
+                class="dropdown-menu px-2 pt-4 pb-2"
+                aria-labelledby="country-language"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="country">
+                    <span class="pb-2 d-block">Country</span>
+                    <select class="form-control" name="country" id="country">
+                      <option value="us">United Status</option>
+                      <option value="de">Germany</option>
+                      <option value="it">Italy</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="language" class="form-label">
+                    <span class="pb-2 d-block">Language</span>
+                    <select class="form-control" name="language" id="language">
+                      <option value="en">English</option>
+                      <option value="de">Dutch</option>
+                      <option value="it">Italian</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                    </select>
+                  </label>
+                </div>
+                <button class="btn btn-danger btn-block btn-save">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/Logo-hair.png" class="logo" alt="" />
+          </a>
+        </div>
+
+        <div class="mobile">
+          <a class="nav-link text-light cart" href="#">
+            <img src="assets/img/cart.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto d-flex align-items-center">
+            <li class="nav-item mr-4 active">
+              <a class="nav-link text-light" href="#">Catalog</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Track my order</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">My Account</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">About Us</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop">
+          <a class="nav-link text-light cart" href="#">
+            <img src="assets/img/cart.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Start Banner Hero -->
+    <section id="banner">
+      <img src="assets/img/banner.png" alt="" />
+    </section>
+    <!-- End Banner Hero -->
+
+    <!-- Start cart -->
+    <section id="cart" class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="carousel-container position-relative">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-slide-number="0">
+                  <img
+                    src="assets/img/c-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                    data-type="image"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                  />
+                </div>
+                <div class="carousel-item" data-slide-number="1">
+                  <img
+                    src="assets/img/c-2.png"
+                    class="d-block w-100"
+                    alt="..."
+                    data-type="image"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                  />
+                </div>
+                <div class="carousel-item" data-slide-number="2">
+                  <img
+                    src="assets/img/c-3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    data-type="image"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                  />
+                </div>
+                <div class="carousel-item" data-slide-number="3">
+                  <img
+                    src="assets/img/c-4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    data-type="image"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                  />
+                </div>
+                <div class="carousel-item" data-slide-number="4">
+                  <img
+                    src="assets/img/c-5.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    data-type="image"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                  />
+                </div>
+                <div class="carousel-item" data-slide-number="5">
+                  <img
+                    src="assets/img/c-6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    data-type="image"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div
+              id="carousel-thumbs"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row mx-0">
+                    <div
+                      id="carousel-selector-0"
+                      class="thumb col-3 px-1 py-2 selected"
+                      data-target="#myCarousel"
+                      data-slide-to="0"
+                    >
+                      <img
+                        src="assets/img/c-1.png"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div
+                      id="carousel-selector-1"
+                      class="thumb col-3 px-1 py-2"
+                      data-target="#myCarousel"
+                      data-slide-to="1"
+                    >
+                      <img
+                        src="assets/img/c-2.png"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div
+                      id="carousel-selector-2"
+                      class="thumb col-3 px-1 py-2"
+                      data-target="#myCarousel"
+                      data-slide-to="2"
+                    >
+                      <img
+                        src="assets/img/c-3.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div
+                      id="carousel-selector-3"
+                      class="thumb col-3 px-1 py-2"
+                      data-target="#myCarousel"
+                      data-slide-to="3"
+                    >
+                      <img
+                        src="assets/img/c-4.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row mx-0">
+                    <div
+                      id="carousel-selector-5"
+                      class="thumb col-3 px-1 py-2"
+                      data-target="#myCarousel"
+                      data-slide-to="4"
+                    >
+                      <img
+                        src="assets/img/c-5.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div
+                      id="carousel-selector-6"
+                      class="thumb col-3 px-1 py-2"
+                      data-target="#myCarousel"
+                      data-slide-to="5"
+                    >
+                      <img
+                        src="assets/img/c-6.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-3 px-1 py-2"></div>
+                    <div class="col-3 px-1 py-2"></div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carousel-thumbs"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carousel-thumbs"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+        <div class="col-md-6">
+          <h1 class="title mb-3">
+            2 in 1 Hair Dryer Brush and Volumizer Blow straightener
+          </h1>
+          <div class="rating row d-flex pb-4 mb-4 border-light border-bottom">
+            <div class="col-xl-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="col-xl-6 text-right">
+              <i class="fas fa-fire"></i>
+              34 sold in last 24 hours
+            </div>
+          </div>
+          <div class="price-wrapper pb-4 mb-4 border-iight border-bottom row">
+            <div class="col-lg-6">
+              <p class="price">$89.00</p>
+              <p class="discount"><b>$129.00</b> ( SAVE $40.00 )</p>
+            </div>
+            <div class="col-lg-6">
+              <button class="reveal btn btn-block">REVEAL SECRET PRICE</button>
+            </div>
+          </div>
+          <div class="quantity-wrapper">
+            <p class="mb-2">Quantity</p>
+            <select name="quantity" id="quantity" class="form-control"></select>
+          </div>
+          <div class="attrs mt-4">
+            <table class="table table-sm table-borderless">
+              <thead>
+                <tr>
+                  <th class="w-10"></th>
+                  <th class="w-25">Colour</th>
+                  <th class="w-25">Size</th>
+                  <th>Custom Text</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="attr-id">1</span></td>
+                  <td>
+                    <select class="form-control" name="color" id="color">
+                      <option value="red">Red</option>
+                      <option value="red">Green</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" name="size" id="size">
+                      <option value="red">2XL</option>
+                      <option value="red">XL</option>
+                      <option value="red">L</option>
+                      <option value="red">M</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Add your text here"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="attr-id">2</span></td>
+                  <td>
+                    <select class="form-control" name="color" id="color">
+                      <option value="red">Red</option>
+                      <option value="red">Green</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" name="size" id="size">
+                      <option value="red">2XL</option>
+                      <option value="red">XL</option>
+                      <option value="red">L</option>
+                      <option value="red">M</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Add your text here"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="offer-alert bg-black text-white w-100 p-3 mb-4">
+            <span>Don't Miss this amazing offer $49 <b>$99</b></span>
+          </div>
+          <div class="btn-cart mb-4">
+            <button class="btn btn-block">ADD TO CART</button>
+          </div>
+          <div
+            class="offer-counter py-2 px-3 d-flex align-items-center justify-content-between"
+          >
+            <span class="desc">OFFER ENDS IN</span>
+            <div class="d-inline-flex flex-row">
+              <div class="clock-item">
+                <p class="figure">00</p>
+                <p class="unit">HOURS</p>
+              </div>
+              <span class="separater">:</span>
+              <div class="clock-item">
+                <p class="figure">50</p>
+                <p class="unit">MINUTES</p>
+              </div>
+              <span class="separater">:</span>
+              <div class="clock-item">
+                <p class="figure">12</p>
+                <p class="unit">SECONDS</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="d-flex flex-column h-100 shipping-item text-center">
+                <img src="assets/img/truck.svg" alt="" />
+                <p>Shipping <b>$10</b> per item</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="d-flex flex-column h-100 shipping-item text-center">
+                <img src="assets/img/pandent.svg" alt="" />
+                <p><b>1208</b> people viewing this product now!</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="d-flex flex-column h-100 shipping-item text-center">
+                <img src="assets/img/user.svg" alt="" />
+                <p>Limit <b>8</b> per customer due to high demand</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div
+                class="d-flex flex-column h-100 shipping-item text-center text-center"
+              >
+                <img src="assets/img/box.svg" alt="" />
+                <p>Shipping <b>$10</b> per item</p>
+              </div>
+            </div>
+          </div>
+          <div class="px-2 py-3 coupon">
+            <p class="m-0 font-weight-bold">
+              <b>Buy 2+ = Free Shipping to: United Kingdom</b>
+              <span class="flag-icon flag-icon-gb"></span>
+            </p>
+          </div>
+          <div class="mt-3 px-2 py-3 coupon">
+            <p class="m-0 font-weight-bold">
+              <b>Buy 3+ Get 1 Free and Free Shipping to: United Kingdom</b>
+              <span class="flag-icon flag-icon-gb"></span>
+            </p>
+            <p class="m-0">(Add 4 to Cart - Offer applied at checkout)</p>
+          </div>
+          <div class="mt-3 payment-icons">
+            <i class="fab fa-cc-paypal mr-2"></i>
+            <i class="fab fa-cc-visa mr-2"></i>
+            <i class="fab fa-cc-mastercard mr-2"></i>
+            <i class="fab fa-cc-jcb mr-2"></i>
+            <i class="fab fa-cc-discover mr-2"></i>
+            <i class="fab fa-cc-amex mr-2"></i>
+          </div>
+          <div
+            class="mt-3 d-flex align-items-center pb-3 border-light border-bottom"
+          >
+            <img
+              src="assets/img/norton.png"
+              class="mr-3"
+              height="50px"
+              alt=""
+            />
+            <img
+              src="assets/img/mcafee.png"
+              class="mr-3"
+              height="50px"
+              alt=""
+            />
+            <img src="assets/img/trust.png" class="mr-3" height="50px" alt="" />
+            <img src="assets/img/gold.png" class="mr-3" height="50px" alt="" />
+          </div>
+          <div class="mt-3 sku">
+            <p>SKU: DL0124</p>
+          </div>
+          <div class="mt-3 infor">
+            <ul class="pl-3">
+              <li>
+                <b>2 in 1: </b>Gives your hair style efficiently while it
+                simultaneously dries each strand.
+              </li>
+              <li>
+                <b>Temperature control: </b>Maintains precise temperature with 2
+                heat settings plus cool setting.
+              </li>
+              <li>
+                <b>Unique airflow vents: </b>Enhanced design for faster drying
+                and better coverage.
+              </li>
+              <li>
+                <b>Oval design: </b>Gently rotates left and right for both inner
+                outer-facing curls, providing flexibility to style.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End cart -->
+
+    <!-- Start Featured Product -->
+    <section id="products">
+      <div class="container">
+        <h2 class="mb-5 text-center heading">
+          THERE ARE THE HIGHEST QUALITY HANDMADE YOU'VE EVER SEEM
+        </h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="h-100 text-white pt-5 pb-4 px-4 product">
+              <p class="mb-2 text-center header">Ultra - Comfort</p>
+              <div class="divider"></div>
+              <p class="text-center mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="h-100 text-white pt-5 pb-4 px-4 product">
+              <p class="mb-2 text-center header">Polyster and lycra</p>
+              <div class="divider"></div>
+              <p class="text-center mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="h-100 text-white pt-5 pb-4 px-4 product">
+              <p class="mb-2 text-center header">No show and ture to size</p>
+              <div class="divider"></div>
+              <p class="text-center mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam. labore et dolore magna aliqua. Ut enim ad
+                minim veniam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Featured Product -->
+
+    <!-- Start Testimonials -->
+    <section id="testimonials">
+      <img src="assets/img/tm-top.png" width="100%" alt="" />
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-7 pt-5 pr-5">
+            <h3>
+              Gives your hair style efficiently while it simultaneously dries
+              each strand.
+            </h3>
+            <div class="divider my-4"></div>
+            <ul class="pl-3">
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>Adipiscing elit, sed do eiusmod tempor incididunt ut</li>
+              <li>Labore et dolore magna aliqua. Ut enim ad minim</li>
+              <li>
+                Veniam, quis nostrud exercitation ullamcoanim id est laborum.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/img/c-3.jpg" width="100%" alt="" />
+          </div>
+        </div>
+
+        <div class="row py-5">
+          <div class="col-md-5">
+            <img src="assets/img/c-4.jpg" width="100%" alt="" />
+          </div>
+          <div class="col-md-7 pt-5 pl-5">
+            <h3>
+              Nylon pin bristles with comfortable ball tips softly detangle
+              hair.
+            </h3>
+            <div class="divider my-4"></div>
+            <ul class="pl-3">
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>Adipiscing elit, sed do eiusmod tempor incididunt ut</li>
+              <li>Labore et dolore magna aliqua. Ut enim ad minim</li>
+              <li>
+                Veniam, quis nostrud exercitation ullamcoanim id est laborum.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row py-5">
+          <div class="col-md-7 pt-5 pr-5">
+            <h3>Enhanced design for faster drying and better coverage.</h3>
+            <div class="divider my-4"></div>
+            <ul class="pl-3">
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>Adipiscing elit, sed do eiusmod tempor incididunt ut</li>
+              <li>Labore et dolore magna aliqua. Ut enim ad minim</li>
+              <li>
+                Veniam, quis nostrud exercitation ullamcoanim id est laborum.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/img/c-5.jpg" width="100%" alt="" />
+          </div>
+        </div>
+
+        <div class="row py-5">
+          <div class="col-md-5">
+            <img src="assets/img/c-6.jpg" width="100%" alt="" />
+          </div>
+          <div class="col-md-7 pt-5 pl-5">
+            <h3>
+              Provides powerful airflow with negative ion to fast dry and take
+              care your hair.
+            </h3>
+            <div class="divider my-4"></div>
+            <ul class="pl-3">
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>Adipiscing elit, sed do eiusmod tempor incididunt ut</li>
+              <li>Labore et dolore magna aliqua. Ut enim ad minim</li>
+              <li>
+                Veniam, quis nostrud exercitation ullamcoanim id est laborum.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row btn-cart mb-5">
+          <div class="col-md-3 mx-auto">
+            <button class="btn btn-block">PAY NOW</button>
+          </div>
+        </div>
+      </div>
+      <img src="assets/img/tm-bottom.png" width="100%" alt="" />
+    </section>
+    <!-- End Testimonials -->
+
+    <section id="customers">
+      <div class="container py-5">
+        <h2 class="mb-4 text-center heading">Our Happy Customers</h2>
+        <div class="divider mx-auto mb-4"></div>
+        <p class="text-center mb-4">Most Recent Reviews</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="customer border border-light">
+              <img src="assets/img/r-1.jpg" width="100%" alt="" />
+              <div class="p-3">
+                <p class="m-0">
+                  <b>Marie</b>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="verified">Verified</span>
+                </p>
+                <div class="w-100 my-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0 desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="customer border border-light">
+              <img src="assets/img/r-3.jpg" width="100%" alt="" />
+              <div class="p-3">
+                <p class="m-0">
+                  <b>Sophie</b>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="verified">Verified</span>
+                </p>
+                <div class="w-100 my-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0 desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="customer border border-light">
+              <img src="assets/img/r-2.jpg" width="100%" alt="" />
+              <div class="p-3">
+                <p class="m-0">
+                  <b>Amanda</b>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="verified">Verified</span>
+                </p>
+                <div class="w-100 my-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0 desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="customer border border-light">
+              <img src="assets/img/r-3.jpg" width="100%" alt="" />
+              <div class="p-3">
+                <p class="m-0">
+                  <b>Catherine</b>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="verified">Verified</span>
+                </p>
+                <div class="w-100 my-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0 desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-black" id="hairdryer_footer">
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-md-5 pt-5">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/Logo-hair.png" class="logo" alt="" />
+            </a>
+            <ul class="list-unstyled text-light footer-link-list">
+              <li>
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                12A, Wray Crescent London, N4 3LP
+              </li>
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                <a class="text-decoration-none" href="tel:+44 123 456 789">
+                  +44 123 456 789
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 pt-5">
+            <ul class="list-unstyled text-light footer-link-list">
+              <li><a class="text-decoration-none" href="#">Privacy</a></li>
+              <li><a class="text-decoration-none" href="#">Terms</a></li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Refund & Return Policy</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#">Shipping Policy</a>
+              </li>
+              <li><a class="text-decoration-none" href="#">Affiliates</a></li>
+              <li><a class="text-decoration-none" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 pt-5 payments">
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+            </div>
+            <div class="d-flex justify-content-around mb-4">
+              <i class="fab fa-cc-jcb"></i>
+              <i class="fab fa-cc-discover"></i>
+              <i class="fab fa-cc-amex"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 bg-black py-3 border-white border-top footer-bottom">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-md-6">
+              <p class="text-left text-light all-rights">
+                Copyright 2020 - 2 in 1 Hair Dryer - All Rights Reserved
+              </p>
+            </div>
+            <div class="col-md-6 social-links">
+              <p class="text-right text-light">
+                <a href="#" class="mr-3">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/select2/js/select2.full.min.js"></script>
+    <script src="assets/vendor/lightbox/ekko-lightbox.min.js"></script>
+    <script src="assets/js/hairdryer.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/index.js"></script>
+    <!-- End Script -->
+  </body>
+</html>

@@ -1,0 +1,455 @@
+/* Typography */
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+body,
+ul,
+li,
+p,
+a,
+label,
+input,
+div {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  outline: none;
+}
+.h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+}
+.h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px !important;
+  font-weight: 300;
+}
+.h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media (max-width: 991.98px) {
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid,
+  .navbar-expand-lg > .container-lg,
+  .navbar-expand-lg > .container-md,
+  .navbar-expand-lg > .container-sm,
+  .navbar-expand-lg > .container-xl {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+/* General */
+.logo {
+  width: 150px;
+}
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+.text-warning {
+  color: #ede861 !important;
+}
+.text-muted {
+  color: #bcbcbc !important;
+}
+.text-success {
+  color: #59ab6e !important;
+}
+.text-light {
+  color: #cfd6e1 !important;
+}
+.bg-dark {
+  background-color: #212934 !important;
+}
+.bg-light {
+  background-color: #e9eef5 !important;
+}
+.bg-black {
+  background-color: #1d242d !important;
+}
+.bg-success {
+  background-color: #59ab6e !important;
+}
+.btn-success {
+  background-color: #59ab6e !important;
+  border-color: #56ae6c !important;
+}
+.pagination .page-link:hover {
+  color: #000;
+}
+.pagination .page-link:hover,
+.pagination .page-link.active {
+  background-color: #69bb7e;
+  color: #fff;
+}
+/* Nav */
+nav.navbar {
+  background: #000 !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 10px 0;
+}
+.navbar .cart img {
+  filter: brightness(0) invert(1);
+  width: 35px;
+}
+#hairdryer_nav_top {
+  min-height: 65px;
+  display: flex !important;
+  align-items: center;
+  background: #fff !important;
+}
+#hairdryer_nav_top * {
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+}
+#hairdryer_nav_top i {
+  height: 17px;
+  font-size: 1rem !important;
+}
+#hairdryer_nav_top i.fa-star {
+  color: #d4aa46;
+}
+#hairdryer_nav_top a {
+  color: #000 !important;
+}
+#hairdryer_main_nav a {
+  color: #000 !important;
+}
+#hairdryer_main_nav a:hover {
+  color: #69bb7e;
+}
+#hairdryer_main_nav .navbar .nav-icon {
+  margin-right: 20px;
+}
+
+/* Hero Carousel */
+#template-mo-zay-hero-carousel {
+  background: #efefef !important;
+}
+/* Accordion */
+.hairdryer-accordion a {
+  color: #000;
+}
+.hairdryer-accordion a:hover {
+  color: #333d4a;
+}
+/* Shop */
+.shop-top-menu a:hover {
+  color: #69bb7e !important;
+}
+/* Product */
+.product-wap {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.product-wap .product-color-dot.color-dot-red {
+  background: #f71515;
+}
+.product-wap .product-color-dot.color-dot-blue {
+  background: #6db4fe;
+}
+.product-wap .product-color-dot.color-dot-black {
+  background: #000000;
+}
+.product-wap .product-color-dot.color-dot-light {
+  background: #e0e0e0;
+}
+.product-wap .product-color-dot.color-dot-green {
+  background: #0bff7e;
+}
+.card.product-wap .card .product-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.card.product-wap:hover .card .product-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.card.product-wap a {
+  color: #000;
+}
+#carousel-related-product .slick-slide:focus {
+  outline: none !important;
+}
+#carousel-related-product .slick-dots li button:before {
+  font-size: 15px;
+  margin-top: 20px;
+}
+/* Brand */
+.brand-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.brand-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+/* Carousel Hero */
+#template-mo-zay-hero-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: #59ab6e;
+}
+#template-mo-zay-hero-carousel .carousel-control-next i,
+#template-mo-zay-hero-carousel .carousel-control-prev i {
+  color: #59ab6e !important;
+  font-size: 2.8em !important;
+}
+/* Carousel Brand */
+.tempaltemo-carousel .h1 {
+  font-size: 0.5em !important;
+  color: #000 !important;
+}
+/* Services */
+.services-icon-wap {
+  transition: 0.3s;
+}
+.services-icon-wap:hover,
+.services-icon-wap:hover i {
+  color: #fff;
+}
+.services-icon-wap:hover {
+  background: #69bb7e;
+}
+/* Contact map */
+.leaflet-control a,
+.leaflet-control {
+  font-size: 10px !important;
+}
+.form-control {
+  border: 1px solid #e8e8e8;
+}
+/* Footer */
+#hairdryer_footer a {
+  color: #dcdde1;
+}
+#hairdryer_footer a:hover {
+  color: #68bb7d;
+}
+#hairdryer_footer ul.footer-link-list li {
+  padding-top: 10px;
+}
+#hairdryer_footer ul.footer-icons li {
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.6em;
+}
+#hairdryer_footer ul.footer-icons li:hover {
+  background-color: #cfd6e1;
+  transition: 0.5s;
+}
+#hairdryer_footer ul.footer-icons li:hover i {
+  color: #212934;
+  transition: 0.5s;
+}
+#hairdryer_footer .border-light {
+  border-color: #2d343f !important;
+}
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
+/* Small devices (landscape phones, 576px and up)*/
+.product-wap .h3,
+.product-wap li,
+.product-wap i,
+.product-wap p {
+  font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+  width: 6px;
+  height: 6px;
+}
+
+#hairdryer_nav_top .select-group {
+  margin: 0 auto;
+  display: flex !important;
+}
+.select-group {
+  position: relative;
+}
+.select2.select2-container {
+  padding: 0 !important;
+}
+.select2-container.select2-container--open {
+  padding-top: 10px;
+}
+.select2-container .select2-search__field {
+  border-radius: 6px !important;
+  outline: none !important;
+  border: none !important;
+  position: relative;
+}
+.select2-search__field:after {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  position: absolute;
+  color: #000;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+}
+.select2-container--open {
+  min-width: 200px !important;
+}
+.dropdown-menu#country-language {
+  width: 220px !important;
+  margin-top: 15px;
+  box-shadow: 0 2px 18px rgb(0 0 0 / 40%);
+  border-radius: 6px;
+}
+#country-language-menu {
+  box-shadow: 0 2px 18px rgb(0 0 0 / 40%);
+  margin-top: 15px;
+}
+#select2-country-container,
+#select2-language-container {
+  min-width: 200px;
+}
+.select2-search {
+  background: #ddd;
+  padding: 10px 6px 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: relative;
+}
+.select2-container--default .select2-results > .select2-results__options {
+  border-radius: 6px !important;
+}
+.select2-results__option {
+  font-size: 14px !important;
+  padding: 4px 10px;
+}
+.select2-dropdown {
+  box-shadow: 0 2px 18px rgb(0 0 0 / 40%);
+  border-radius: 6px !important;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.select2-results__option--highlighted {
+  background-color: #ddd !important;
+  color: rgb(226, 48, 78) !important;
+}
+#country,
+#language {
+  width: 100% im !important;
+}
+.select2 .select2-selection {
+  outline: none !important;
+}
+#currency ~ .select2 .select2-selection {
+  border: none !important;
+  text-align: right;
+  font-size: 18px !important;
+}
+.flag-icon {
+  background-position: 0 !important;
+}
+.select2-selection {
+  border: solid 1px #ddd !important;
+}
+.dropdown-toggle {
+  padding-right: 13px;
+  height: 100% !important;
+  display: flex;
+  cursor: pointer;
+}
+.dropdown-toggle:after {
+  border-color: #888 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  height: 0;
+  right: 0;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+#country-language button {
+  background: #f32261;
+}
+.social-links i {
+  font-size: 25px;
+}
+.payments i {
+  color: white;
+  font-size: 62px;
+}
+@media (min-width: 576px) {
+  .tempaltemo-carousel .h1 {
+    font-size: 1em !important;
+  }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #hairdryer_main_nav .navbar-nav {
+    max-width: 450px;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  #hairdryer_main_nav .navbar-nav {
+    max-width: 550px;
+  }
+  #template-mo-zay-hero-carousel .carousel-item {
+    min-height: 30rem !important;
+  }
+  .product-wap .h3,
+  .product-wap li,
+  .product-wap i,
+  .product-wap p {
+    font-size: 18px !important;
+  }
+  .product-wap .product-color-dot {
+    width: 12px;
+    height: 12px;
+  }
+  #hairdryer_nav_top .select-group {
+    margin: 0 0;
+    display: flex !important;
+  }
+  .logo {
+    width: 250px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
