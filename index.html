@@ -85,9 +85,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="d-flex select-group flex-row align-items-center ml-auto my-2"
-          >
+          <div class="d-flex select-group flex-row align-items-center ml-auto">
             <select class="d-inline-block" name="currency" id="currency">
               <option value="eur">EUR (&#128;)</option>
               <option value="gbp">GBP (&#163;)</option>
@@ -473,9 +471,13 @@
               </tbody>
             </table>
           </div>
-          <div class="offer-alert bg-black text-white w-100 px-3 py-1 mb-4">
-            <input class="mr-2" type="checkbox" checked />
-            <span>Don't Miss this amazing offer $49 <b>$99</b></span>
+          <div
+            class="offer-alert bg-black text-white w-100 px-3 py-1 mb-4 form-group"
+          >
+            <input class="mr-2" type="checkbox" id="special-offer" />
+            <label for="special-offer"
+              >Don't Miss this amazing offer $49&nbsp;<b>$99</b></label
+            >
           </div>
           <div class="btn-cart mb-4">
             <button class="btn btn-block btn-wobble">ADD TO CART</button>

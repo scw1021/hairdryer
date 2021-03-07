@@ -399,7 +399,7 @@ nav.navbar {
   background-position: 0 !important;
 }
 .select2-selection {
-  border: solid 1px #ddd !important;
+  border: solid 1px #eee !important;
 }
 .dropdown-toggle {
   padding-right: 13px;
@@ -444,6 +444,51 @@ nav.navbar {
   .select2-selection__arrow
   b {
   top: 70%;
+}
+.form-group input[type="checkbox"] {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.form-group input[type="checkbox"] + label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%),
+    inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input[type="checkbox"]:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 {
