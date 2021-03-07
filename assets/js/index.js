@@ -96,13 +96,13 @@ $(function () {
         (i + 1) +
         "</span></td>" +
         "<td>" +
-        '<select class="form-control" name="color" id="color">' +
+        '<select class="form-control color" name="color">' +
         '<option value="red">Red</option>' +
         '<option value="red">Green</option>' +
         "</select>" +
         "</td>" +
         "<td>" +
-        '<select class="form-control" name="size" id="size">' +
+        '<select class="form-control size" name="size">' +
         '<option value="red">XS</option>' +
         '<option value="red">S</option>' +
         '<option value="red">L</option>' +
@@ -116,5 +116,15 @@ $(function () {
         "</tr>";
     }
     $(".attrs table tbody").html(html);
+    initAttrSelector();
   });
+  function initAttrSelector() {
+    $(".size").select2({ minimumResultsForSearch: -1 });
+    $(".color").select2({ minimumResultsForSearch: -1 });
+  }
+  initAttrSelector();
+
+  setTimeout(function () {
+    $(".btn-cart button").removeClass("btn-wobble");
+  }, 10000);
 });

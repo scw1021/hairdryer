@@ -428,6 +428,23 @@ nav.navbar {
   color: white;
   font-size: 62px;
 }
+.offer-alert b {
+  text-decoration: line-through;
+}
+.select2-container .select2-selection--single {
+  height: 38px;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  line-height: 38px;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  top: 70%;
+}
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 {
     font-size: 1em !important;

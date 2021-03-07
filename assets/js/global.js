@@ -33,14 +33,14 @@ $(function () {
       "'></span>&nbsp;/ " +
       language;
     $("#country-language").html(html);
+    // $("#country-language-menu").removeClass("show");
   }
-  $(".btn-save").click(function () {
-    updateLangCountry();
-    $("#country-language-menu").removeClass("show");
-  });
+  // $(".btn-save").click(function () {
+  //   updateLangCountry();
+  // });
 
-  $("#language").click(updateLangCountry);
-  $("#country").click(updateLangCountry);
+  $("#language").change(updateLangCountry);
+  $("#country").change(updateLangCountry);
 
   // disable language-country selector close when click inside
   // Clicking dropdown button will toggle display
