@@ -9,6 +9,7 @@
   object-fit: cover;
 }
 #carousel-thumbs {
+  margin-top: 20px;
   background: rgba(255, 255, 255, 0.3);
   padding: 0 30px;
   position: relative !important;
@@ -25,26 +26,30 @@
 }
 .carousel-control-prev,
 .carousel-control-next {
-  width: 30px;
+  width: 20px;
   background-color: #ddd;
+}
+.carousel-item .thumb.selected {
+  border: solid 1px #cfaa52;
 }
 #cart {
   margin-top: -60px;
 }
 #cart .title {
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 #cart .fa-star {
   color: #d5ab46;
 }
 #cart .price {
   font-weight: 700;
-  margin-bottom: 0 !important;
-  font-size: 1.875rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 #cart .discount {
-  font-size: 16px;
+  font-size: 15px;
   color: #9c9c9c;
 }
 #cart .discount b {
@@ -55,23 +60,28 @@
   background-color: #000000 !important;
   border-style: none;
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: white;
-  border-radius: 10px !important;
-  padding: 10px 30px;
+  border-radius: 5px !important;
+  padding: 5px 15px;
+  border: solid 1px #000;
+}
+#cart .reveal:hover {
+  background-color: #fff !important;
+  color: #000;
 }
 #cart .price-wrapper {
   display: flex !important;
-  align-items: flex-end;
 }
 #cart .price-wrapper p {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 .select2-selection[aria-controls="select2-quantity-container"] {
   border: solid 1px #eee !important;
 }
 .quantity-item b {
   font-weight: 700;
+  font-size: 15px;
 }
 .quantity-item span {
   color: #d5ab46;
@@ -85,15 +95,20 @@
   align-items: center;
   justify-content: center;
 }
+.attrs th {
+  font-weight: 400 !important;
+  color: #aaa;
+}
 .attrs select,
 .attrs input {
   height: 38px;
 }
 .attrs select {
   font-weight: 700;
+  background: #fff !important;
 }
 .attrs table > tbody > tr > td {
-  padding: 2px;
+  padding: 7px 0;
   vertical-align: center;
 }
 .offer-alert {
@@ -103,11 +118,17 @@
   font-weight: 700;
 }
 .btn-cart button {
-  color: #ffffff !important;
-  background-color: #d0a02f !important;
-  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #d0a02f;
+  border: solid 1px #d0a02f;
+  font-size: 1.3rem;
   padding: 10px;
   border-radius: 50px;
+  transition: all 0.4s;
+}
+.btn-cart button:hover {
+  color: #d0a02f;
+  background: #fff;
 }
 .offer-counter {
   padding: 15px 30px !important;
@@ -123,21 +144,16 @@
 }
 .offer-counter .separater {
   font-size: 1.8rem;
-}
-.offer-counter .separater {
-  padding: 0 5px;
-}
-.offer-counter .separater {
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  padding: 0 10px;
+  line-height: 2rem;
 }
 .offer-counter .figure {
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 2.5rem;
 }
 .offer-counter .unit {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
 }
 .shipping-item {
   background: #f2f2f2;
@@ -152,7 +168,7 @@
 }
 .shipping-item img {
   color: #898989;
-  width: 40px;
+  width: 30px;
   margin: 0 auto;
 }
 .coupon {
@@ -234,11 +250,27 @@
   font-weight: 700;
 }
 #customers .desc {
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 400;
   text-align: justify;
 }
 #customers .fa-star {
   color: #d5ab46;
+}
+.secret-price {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: 0;
+  background-color: #d5ab46;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 5px 5px;
+  z-index: -5;
+}
+#cart .reveal:focus {
+  transform: translate(-30px, 0);
 }
 @media all and (max-width: 1200px) {
   .payments i {
@@ -250,7 +282,7 @@
   .offer-counter .desc,
   .offer-counter .figure,
   .heading {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   #testimonials h3 {
     font-size: 1.5rem;
@@ -266,9 +298,6 @@
   #testimonials .col-md-7 {
     padding-right: 15px !important;
     padding-left: 15px !important;
-  }
-  #hairdryer_footer {
-    text-align: center;
   }
   .footer-bottom .all-rights,
   .footer-bottom .social-links p {
@@ -298,6 +327,18 @@
     height: 350px;
     object-fit: cover;
   }
+  .shipping-item {
+    padding: 10px 5px;
+  }
+  .shipping-item p {
+    font-size: 0.8rem;
+  }
+  #customers .desc {
+    font-size: 14px;
+  }
+  .offer-counter .separater {
+    font-size: 1.8rem;
+  }
 }
 @media all and (min-width: 576px) {
   .carousel-container #carousel-thumbs {
@@ -305,7 +346,88 @@
   }
 }
 @media all and (max-width: 576px) {
-  .carousel-container #carousel-thumbs {
-    background: #ccccce;
+}
+.btn-shake {
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform-origin: 50% 100%;
+}
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-2deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(3deg);
+  }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-2deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(4deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.btn-wobble {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform-origin: 50% 100%;
+}
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  2% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  4% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  6% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  8% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  10% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  15% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
   }
 }

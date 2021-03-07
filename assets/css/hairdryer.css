@@ -62,7 +62,7 @@ div {
 }
 /* General */
 .logo {
-  width: 150px;
+  width: 200px;
 }
 .mobile {
   display: block;
@@ -111,14 +111,13 @@ nav.navbar {
   background: #000 !important;
   border: none !important;
   margin: 0 !important;
-  padding: 10px 0;
 }
 .navbar .cart img {
   filter: brightness(0) invert(1);
   width: 35px;
 }
 #hairdryer_nav_top {
-  min-height: 65px;
+  min-height: 55px;
   display: flex !important;
   align-items: center;
   background: #fff !important;
@@ -140,13 +139,31 @@ nav.navbar {
 #hairdryer_main_nav a {
   color: #000 !important;
 }
+#navbarSupportedContent .nav-link {
+  font-size: 14px !important;
+  color: #fff;
+}
 #hairdryer_main_nav a:hover {
   color: #69bb7e;
 }
 #hairdryer_main_nav .navbar .nav-icon {
   margin-right: 20px;
 }
-
+.cart {
+  position: relative;
+}
+.cart .cart-count {
+  width: 20px;
+  color: white;
+  height: 20px;
+  position: absolute;
+  border-radius: 10px;
+  background: #d5ab46;
+  font-size: 13px;
+  text-align: center;
+  right: 6px;
+  top: 0px;
+}
 /* Hero Carousel */
 #template-mo-zay-hero-carousel {
   background: #efefef !important;
@@ -246,8 +263,15 @@ nav.navbar {
   border: 1px solid #e8e8e8;
 }
 /* Footer */
+#hairdryer_footer {
+  background-color: #000;
+  color: #fff;
+}
 #hairdryer_footer a {
   color: #dcdde1;
+}
+#hairdryer_footer .footer-bottomm {
+  background-color: #000;
 }
 #hairdryer_footer a:hover {
   color: #68bb7d;
@@ -288,7 +312,6 @@ nav.navbar {
 }
 
 #hairdryer_nav_top .select-group {
-  margin: 0 auto;
   display: flex !important;
 }
 .select-group {
@@ -328,6 +351,8 @@ nav.navbar {
   border-radius: 6px;
 }
 #country-language-menu {
+  left: auto !important;
+  right: 0 !important;
   box-shadow: 0 2px 18px rgb(0 0 0 / 40%);
   margin-top: 15px;
 }
@@ -357,7 +382,6 @@ nav.navbar {
 }
 .select2-results__option--highlighted {
   background-color: #ddd !important;
-  color: rgb(226, 48, 78) !important;
 }
 #country,
 #language {
@@ -449,7 +473,22 @@ nav.navbar {
     width: 250px;
   }
 }
-
+@media all and (max-width: 767px) {
+  #hairdryer_footer {
+    text-align: center;
+    background-color: #000;
+  }
+}
+@media all and (max-width: 767px) {
+  #hairdryer_footer .payments,
+  #hairdryer_footer .links,
+  #hairdryer_footer .contacts {
+    padding-top: 20px !important;
+  }
+  #hairdryer_footer .payments .justify-content-around {
+    justify-content: center !important;
+  }
+}
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 }

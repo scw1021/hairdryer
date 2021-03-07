@@ -47,41 +47,47 @@
           <div
             class="d-flex flex-wrap text-align justify-content-center align-items-center"
           >
-            <div class="pr-2 mr-2">
-              <i class="fas fa-truck mr-2"></i>
-              <a class="navbar-sm-brand text-decoration-none" href="#"
-                >FREE SHIPPING</a
-              >
+            <div class="d-flex flex-row group-top my-2">
+              <div class="pr-2 mr-2">
+                <i class="fas fa-truck mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >FREE SHIPPING</a
+                >
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-certificate mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >100% MONEY BACK GUARANTEE</a
+                >
+              </div>
             </div>
-            <div class="pr-2 mr-2">
-              <i class="fas fa-certificate mr-2"></i>
-              <a class="navbar-sm-brand text-decoration-none" href="#"
-                >100% MONEY BACK GUARANTEE</a
-              >
-            </div>
-            <div class="pr-2 mr-2">
-              <i class="fas fa-undo-alt mr-2"></i>
-              <a class="navbar-sm-brand text-decoration-none" href="#"
-                >EASY RERTURN</a
-              >
-            </div>
-            <div class="pr-2 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="pr-2 mr-2">
-              <i class="fas fa-mobile-alt mr-2"></i>
-              <a
-                class="navbar-sm-brand text-decoration-none"
-                href="tel:+44 123 456 789"
-                >+44 123 456 789</a
-              >
+            <div class="d-flex flex-row">
+              <div class="pr-2 mr-2">
+                <i class="fas fa-undo-alt mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >EASY RERTURN</a
+                >
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-mobile-alt mr-2"></i>
+                <a
+                  class="navbar-sm-brand text-decoration-none"
+                  href="tel:+44 123 456 789"
+                  >+44 123 456 789</a
+                >
+              </div>
             </div>
           </div>
-          <div class="d-flex select-group flex-row align-items-center">
+          <div
+            class="d-flex select-group flex-row align-items-center ml-auto my-2"
+          >
             <select class="d-inline-block" name="currency" id="currency">
               <option value="eur">EUR (&#128;)</option>
               <option value="gbp">GBP (&#163;)</option>
@@ -169,16 +175,14 @@
         </div>
 
         <div class="mobile">
-          <a class="nav-link text-light cart" href="#">
+          <a class="nav-link text-light cart btn-wobble" href="#">
             <img src="assets/img/cart.svg" alt="" />
+            <span class="cart-count">5</span>
           </a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto d-flex align-items-center">
-            <li class="nav-item mr-4 active">
-              <a class="nav-link text-light" href="#">Catalog</a>
-            </li>
+          <ul class="navbar-nav mx-auto d-flex align-items-center">
             <li class="nav-item mr-4">
               <a class="nav-link text-light" href="#">Track my order</a>
             </li>
@@ -194,8 +198,9 @@
           </ul>
         </div>
         <div class="desktop">
-          <a class="nav-link text-light cart" href="#">
+          <a class="nav-link text-light cart btn-wobble" href="#">
             <img src="assets/img/cart.svg" alt="" />
+            <span class="cart-count">5</span>
           </a>
         </div>
       </div>
@@ -211,7 +216,7 @@
     <!-- Start cart -->
     <section id="cart" class="container py-5">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 mb-4">
           <div class="carousel-container position-relative">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
@@ -407,6 +412,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
+              <span>(412)</span>
             </div>
             <div class="col-xl-6 text-right">
               <i class="fas fa-fire"></i>
@@ -414,12 +420,15 @@
             </div>
           </div>
           <div class="price-wrapper pb-4 mb-4 border-iight border-bottom row">
-            <div class="col-lg-6">
-              <p class="price">$89.00</p>
+            <div class="col-6">
+              <p class="price mb-2">$89.00</p>
               <p class="discount"><b>$129.00</b> ( SAVE $40.00 )</p>
             </div>
-            <div class="col-lg-6">
-              <button class="reveal btn btn-block">REVEAL SECRET PRICE</button>
+            <div class="col-6 text-right">
+              <div class="position-relative pr-3">
+                <span class="h-100 secret-price">$120</span>
+                <button class="reveal btn">REVEAL SECRET PRICE</button>
+              </div>
             </div>
           </div>
           <div class="quantity-wrapper">
@@ -447,34 +456,11 @@
                   </td>
                   <td>
                     <select class="form-control" name="size" id="size">
-                      <option value="red">2XL</option>
-                      <option value="red">XL</option>
+                      <option value="red">XS</option>
+                      <option value="red">S</option>
                       <option value="red">L</option>
-                      <option value="red">M</option>
-                    </select>
-                  </td>
-                  <td>
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Add your text here"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td><span class="attr-id">2</span></td>
-                  <td>
-                    <select class="form-control" name="color" id="color">
-                      <option value="red">Red</option>
-                      <option value="red">Green</option>
-                    </select>
-                  </td>
-                  <td>
-                    <select class="form-control" name="size" id="size">
-                      <option value="red">2XL</option>
                       <option value="red">XL</option>
-                      <option value="red">L</option>
-                      <option value="red">M</option>
+                      <option value="red">XXL</option>
                     </select>
                   </td>
                   <td>
@@ -488,7 +474,8 @@
               </tbody>
             </table>
           </div>
-          <div class="offer-alert bg-black text-white w-100 p-3 mb-4">
+          <div class="offer-alert bg-black text-white w-100 px-3 py-1 mb-4">
+            <input class="mr-2" type="checkbox" />
             <span>Don't Miss this amazing offer $49 <b>$99</b></span>
           </div>
           <div class="btn-cart mb-4">
@@ -515,26 +502,26 @@
               </div>
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="row mt-3 ad-items">
+            <div class="col-3 mb-3">
               <div class="d-flex flex-column h-100 shipping-item text-center">
                 <img src="assets/img/truck.svg" alt="" />
                 <p>Shipping <b>$10</b> per item</p>
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="col-3 mb-3">
               <div class="d-flex flex-column h-100 shipping-item text-center">
                 <img src="assets/img/pandent.svg" alt="" />
                 <p><b>1208</b> people viewing this product now!</p>
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="col-3 mb-3">
               <div class="d-flex flex-column h-100 shipping-item text-center">
                 <img src="assets/img/user.svg" alt="" />
                 <p>Limit <b>8</b> per customer due to high demand</p>
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="col-3 mb-3">
               <div
                 class="d-flex flex-column h-100 shipping-item text-center text-center"
               >
@@ -756,7 +743,7 @@
         <div class="divider mx-auto mb-4"></div>
         <p class="text-center mb-4">Most Recent Reviews</p>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-6">
             <div class="customer border border-light">
               <img src="assets/img/r-1.jpg" width="100%" alt="" />
               <div class="p-3">
@@ -780,8 +767,6 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="customer border border-light">
               <img src="assets/img/r-3.jpg" width="100%" alt="" />
               <div class="p-3">
@@ -809,7 +794,33 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-6">
+            <div class="customer border border-light">
+              <img src="assets/img/r-3.jpg" width="100%" alt="" />
+              <div class="p-3">
+                <p class="m-0">
+                  <b>Sophie</b>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="verified">Verified</span>
+                </p>
+                <div class="w-100 my-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0 desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt.
+                </p>
+              </div>
+            </div>
             <div class="customer border border-light">
               <img src="assets/img/r-2.jpg" width="100%" alt="" />
               <div class="p-3">
@@ -838,12 +849,90 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-6">
+            <div class="customer border border-light">
+              <img src="assets/img/r-2.jpg" width="100%" alt="" />
+              <div class="p-3">
+                <p class="m-0">
+                  <b>Amanda</b>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="verified">Verified</span>
+                </p>
+                <div class="w-100 my-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0 desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur,
+                </p>
+              </div>
+            </div>
+            <div class="customer border border-light">
+              <img src="assets/img/r-3.jpg" width="100%" alt="" />
+              <div class="p-3">
+                <p class="m-0">
+                  <b>Sophie</b>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="verified">Verified</span>
+                </p>
+                <div class="w-100 my-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0 desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
             <div class="customer border border-light">
               <img src="assets/img/r-3.jpg" width="100%" alt="" />
               <div class="p-3">
                 <p class="m-0">
                   <b>Catherine</b>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="verified">Verified</span>
+                </p>
+                <div class="w-100 my-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0 desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="customer border border-light">
+              <img src="assets/img/r-1.jpg" width="100%" alt="" />
+              <div class="p-3">
+                <p class="m-0">
+                  <b>Marie</b>
                   <i class="fas fa-check-circle"></i>
                   <span class="verified">Verified</span>
                 </p>
@@ -868,14 +957,14 @@
     </section>
 
     <!-- Start Footer -->
-    <footer class="bg-black" id="hairdryer_footer">
+    <footer id="hairdryer_footer">
       <div class="container mb-4">
         <div class="row">
-          <div class="col-md-5 pt-5">
+          <div class="col-md-5 pt-5 contacts">
             <a class="navbar-brand" href="#">
               <img src="assets/img/Logo-hair.png" class="logo" alt="" />
             </a>
-            <ul class="list-unstyled text-light footer-link-list">
+            <ul class="list-unstyled footer-link-list mb-0">
               <li>
                 <i class="fas fa-map-marker-alt fa-fw"></i>
                 12A, Wray Crescent London, N4 3LP
@@ -889,8 +978,8 @@
             </ul>
           </div>
 
-          <div class="col-md-4 pt-5">
-            <ul class="list-unstyled text-light footer-link-list">
+          <div class="col-md-4 pt-5 links">
+            <ul class="list-unstyled footer-link-list">
               <li><a class="text-decoration-none" href="#">Privacy</a></li>
               <li><a class="text-decoration-none" href="#">Terms</a></li>
               <li>
@@ -909,28 +998,28 @@
           <div class="col-md-3 pt-5 payments">
             <div class="d-flex justify-content-around mb-3">
               <i class="fab fa-cc-paypal"></i>
-              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-visa mx-3"></i>
               <i class="fab fa-cc-mastercard"></i>
             </div>
             <div class="d-flex justify-content-around mb-4">
               <i class="fab fa-cc-jcb"></i>
-              <i class="fab fa-cc-discover"></i>
+              <i class="fab fa-cc-discover mx-3"></i>
               <i class="fab fa-cc-amex"></i>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="w-100 bg-black py-3 border-white border-top footer-bottom">
+      <div class="w-100 py-3 border-white border-top footer-bottom">
         <div class="container">
           <div class="row pt-2">
             <div class="col-md-6">
-              <p class="text-left text-light all-rights">
+              <p class="text-left all-rights">
                 Copyright 2020 - 2 in 1 Hair Dryer - All Rights Reserved
               </p>
             </div>
             <div class="col-md-6 social-links">
-              <p class="text-right text-light">
+              <p class="text-right">
                 <a href="#" class="mr-3">
                   <i class="fab fa-facebook-square"></i>
                 </a>

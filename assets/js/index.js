@@ -53,27 +53,68 @@ $(function () {
 
   // quantity select
   var dataQuantity = [
-    {
-      id: 0,
-      text: '<div style="color:green">enhancement</div>',
-      html:
-        "<div class='quantity-item'><b>Qty:2 = $178</b> $268&nbsp;&nbsp;(31% OFF)&nbsp;&nbsp;<span>BEST SELLER</span></div>",
-    },
-    {
-      id: 1,
-      text: '<div style="color:red">bug</div>',
-      html:
-        "<div class='quantity-item'><b>Qty:2 = $178</b> $268&nbsp;&nbsp;(31% OFF)&nbsp;&nbsp;<span>BEST SELLER</span></div>",
-    },
+    { id: 0, quantity: 1, price: 100 },
+    { id: 1, quantity: 2, price: 200 },
+    { id: 2, quantity: 3, price: 300 },
+    { id: 3, quantity: 4, price: 400 },
+    { id: 4, quantity: 5, price: 500 },
+    { id: 5, quantity: 6, price: 600 },
+    { id: 6, quantity: 7, price: 700 },
+    { id: 7, quantity: 8, price: 800 },
+    { id: 8, quantity: 9, price: 900 },
+    { id: 9, quantity: 10, price: 1000 },
   ];
   $("#quantity").select2({
     minimumResultsForSearch: -1,
     data: dataQuantity,
     templateResult: function (data) {
-      return $(data.html);
+      var html =
+        "<div class='quantity-item'><b>Qty:" +
+        data.quantity +
+        " = $" +
+        data.price +
+        "</b> &nbsp;&nbsp;(31% OFF)&nbsp;&nbsp;<span>BEST SELLER</span></div>";
+      return $(html);
     },
     templateSelection: function (data) {
-      return $(data.html);
+      var html =
+        "<div class='quantity-item'><b>Qty:" +
+        data.quantity +
+        " = $" +
+        data.price +
+        "</b> &nbsp;&nbsp;(31% OFF)&nbsp;&nbsp;<span>BEST SELLER</span></div>";
+      return $(html);
     },
+  });
+  $("#quantity").change(function () {
+    var amount = parseInt($(this).val()) + 1;
+    var html = "";
+    for (let i = 0; i < amount; i++) {
+      html +=
+        "<tr>" +
+        '<td><span class="attr-id">' +
+        (i + 1) +
+        "</span></td>" +
+        "<td>" +
+        '<select class="form-control" name="color" id="color">' +
+        '<option value="red">Red</option>' +
+        '<option value="red">Green</option>' +
+        "</select>" +
+        "</td>" +
+        "<td>" +
+        '<select class="form-control" name="size" id="size">' +
+        '<option value="red">XS</option>' +
+        '<option value="red">S</option>' +
+        '<option value="red">L</option>' +
+        '<option value="red">XL</option>' +
+        '<option value="red">XXL</option>' +
+        "</select>" +
+        "</td>" +
+        "<td>" +
+        '<input class="form-control" type="text" placeholder="Add your text here">' +
+        "</td>" +
+        "</tr>";
+    }
+    $(".attrs table tbody").html(html);
   });
 });
