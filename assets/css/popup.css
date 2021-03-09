@@ -242,6 +242,7 @@ body {
 }
 #popup-4 .checkout {
   background: #fff200;
+  border-radius: 10px;
 }
 #popup-4 .checkout input {
   border-radius: 10px;
