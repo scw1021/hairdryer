@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hair Dryer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/select2/css/select2.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/flag-icon/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/lightbox/ekko-lightbox.css" />
+    <link rel="stylesheet" href="assets/css/hairdryer.css" />
+    <link rel="stylesheet" href="assets/css/popup.css" />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Start Top Nav -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
+      id="hairdryer_nav_top"
+    >
+      <div class="container">
+        <div class="w-100 d-flex justify-content-between flex-wrap">
+          <div
+            class="d-flex flex-wrap text-align justify-content-center align-items-center"
+          >
+            <div class="d-flex flex-row group-top my-2">
+              <div class="pr-2 mr-2">
+                <i class="fas fa-truck mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >FREE SHIPPING</a
+                >
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-certificate mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >100% MONEY BACK GUARANTEE</a
+                >
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="pr-2 mr-2">
+                <i class="fas fa-undo-alt mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >EASY RERTURN</a
+                >
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-mobile-alt mr-2"></i>
+                <a
+                  class="navbar-sm-brand text-decoration-none"
+                  href="tel:+44 123 456 789"
+                  >+44 123 456 789</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="d-flex select-group flex-row align-items-center ml-auto">
+            <select class="d-inline-block" name="currency" id="currency">
+              <option value="eur">EUR (&#128;)</option>
+              <option value="gbp">GBP (&#163;)</option>
+              <option value="usd">USD (&#36;)</option>
+              <option value="cad">Canadian dollar</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+            </select>
+            <div class="dropdown d-inline-block ml-3 dropdown-country-language">
+              <div
+                class="dropdown-toggle"
+                id="country-language"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="flag-icon flag-icon-us"></span>
+                &nbsp;/ English
+              </div>
+              <div
+                id="country-language-menu"
+                class="dropdown-menu px-2 pt-4 pb-2"
+                aria-labelledby="country-language"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="country">
+                    <span class="pb-2 d-block">Country</span>
+                    <select class="form-control" name="country" id="country">
+                      <option value="us">United Status</option>
+                      <option value="de">Germany</option>
+                      <option value="it">Italy</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="language" class="form-label">
+                    <span class="pb-2 d-block">Language</span>
+                    <select class="form-control" name="language" id="language">
+                      <option value="en">English</option>
+                      <option value="de">Dutch</option>
+                      <option value="it">Italian</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/Logo-hair.png" class="logo" alt="" />
+          </a>
+        </div>
+
+        <div class="mobile">
+          <a class="nav-link text-light cart" href="#">
+            <img src="assets/img/cart.svg" alt="" />
+            <span class="cart-count">5</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto d-flex align-items-center">
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Catalog</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Track my order</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">My Account</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">About Us</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop">
+          <a class="nav-link text-light cart" href="#">
+            <img src="assets/img/cart.svg" alt="" />
+            <span class="cart-count">5</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Close Header -->
+
+    <div class="container py-5">
+      <div class="text-center mx-auto" id="popup-2">
+        <div class="row">
+          <div class="col-md-6 p-0 img-wrapper">
+            <img src="assets/img/popup-2.png" alt="" />
+          </div>
+          <div class="col-md-6 content">
+            <h1>Wait... Finish your order and get 10% OFF right now.</h1>
+            <p>
+              Sign up today for free and be the first to get notified of new
+              updates and you 10% OFF
+            </p>
+            <input
+              type="email"
+              class="form-control mb-2"
+              placeholder="Enter Your Email"
+            />
+            <div class="w-100 text-center mb-5">
+              <button class="cbtn cbtn-error cbtn-circle btn-activate">
+                Activate Offer
+              </button>
+            </div>
+            <a href="#">No, I don't want this great deal now.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer id="hairdryer_footer">
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-md-5 pt-5 contacts">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/Logo-hair.png" class="logo" alt="" />
+            </a>
+            <ul class="list-unstyled footer-link-list mb-0">
+              <li>
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                12A, Wray Crescent London, N4 3LP
+              </li>
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                <a class="text-decoration-none" href="tel:+44 123 456 789">
+                  +44 123 456 789
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 pt-5 links">
+            <ul class="list-unstyled footer-link-list">
+              <li><a class="text-decoration-none" href="#">Privacy</a></li>
+              <li><a class="text-decoration-none" href="#">Terms</a></li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Refund & Return Policy</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#">Shipping Policy</a>
+              </li>
+              <li><a class="text-decoration-none" href="#">Affiliates</a></li>
+              <li><a class="text-decoration-none" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 pt-5 payments">
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-visa mx-3"></i>
+              <i class="fab fa-cc-mastercard"></i>
+            </div>
+            <div class="d-flex justify-content-around mb-4">
+              <i class="fab fa-cc-jcb"></i>
+              <i class="fab fa-cc-discover mx-3"></i>
+              <i class="fab fa-cc-amex"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 py-3 border-white border-top footer-bottom">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-md-6">
+              <p class="text-left all-rights">
+                Copyright 2020 - 2 in 1 Hair Dryer - All Rights Reserved
+              </p>
+            </div>
+            <div class="col-md-6 social-links">
+              <p class="text-right">
+                <a href="#" class="mr-3">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/select2/js/select2.full.min.js"></script>
+    <script src="assets/vendor/lightbox/ekko-lightbox.min.js"></script>
+    <script src="assets/js/hairdryer.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <!-- End Script -->
+  </body>
+</html>

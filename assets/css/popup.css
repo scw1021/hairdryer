@@ -1,3 +1,7 @@
+body {
+  background: rgb(242, 242, 242);
+}
+
 /* popup 01 */
 #popup-1 {
   width: 600px;
@@ -20,6 +24,8 @@
 }
 #popup-1 input {
   border-radius: 0.45rem !important;
+  border: solid 1px rgb(179, 179, 179);
+  font-size: 0.875rem;
 }
 #popup-1 a {
   color: rgb(169, 170, 173);
@@ -29,5 +35,43 @@
   #popup-1 {
     width: 100%;
     padding: 40px 15px;
+  }
+}
+
+/* popup 02 */
+#popup-2 {
+  width: 790px;
+}
+#popup-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#popup-2 .content {
+  background: #fff;
+  padding: 90px 20px !important;
+}
+#popup-2 h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+#popup-2 p {
+  font-size: 1.125rem;
+  width: 273px;
+  margin: 20px auto 40px;
+  color: #999;
+}
+#popup-2 input {
+  border-radius: 0.45rem !important;
+  font-size: 0.875rem;
+  border: solid 1px rgb(179, 179, 179);
+}
+#popup-2 .btn-activate {
+  width: 210px;
+}
+@media all and (max-width: 767px) {
+  #popup-2 {
+    width: 100%;
   }
 }
