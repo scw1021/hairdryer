@@ -1,51 +1,164 @@
-#your-cart table {
-  vertical-align: middle;
+#cart h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
 }
-#your-cart table thead {
+#cart .products {
+  font-size: 16px;
+}
+#cart .products .pheader {
+  font-size: 16px !important;
+  color: #111111;
+  font-weight: 700;
   background-color: #ecf0f1;
-  color: #111;
 }
-#your-cart table > thead > tr > th {
-  padding: 20px 25px;
+#cart .products .pheader,
+#cart .products .prow {
+  padding: 30px;
 }
-#your-cart table > tbody > tr > td {
-  padding: 10px 25px;
+#cart .products .prow:nth-child(even) {
+  background: #f8f9f9;
 }
-#your-cart .product-info img {
+#cart .products .product {
+  flex: 1 1 30%;
+}
+#cart .products .product img {
   flex: 0 1 40px;
   max-width: 40px;
+  object-fit: cover;
+  margin-right: 10px;
 }
-#your-cart .product-info .product-details {
-  flex: 1 1 auto;
+#cart .products .product .name {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
-#your-cart .product-info .product-details p b {
+#cart .products .product .sku {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: rgb(153, 153, 153);
+}
+#cart .products .price,
+#cart .products .details,
+#cart .products .quantity,
+#cart .products .total {
+  flex: 1 1 17.5%;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+#cart .products .quantity {
+  flex: 1 1 27.5%;
+}
+#cart .products .total {
+  flex: 1 1 7.5%;
+}
+#cart .products .pheader .product,
+#cart .products .pheader .details,
+#cart .products .pheader .price,
+#cart .products .pheader .quantity,
+#cart .products .pheader .total {
+  font-size: 16px;
   font-weight: 700;
 }
-#your-cart table p,
-#your-cart table th,
-#your-cart table td {
-  vertical-align: middle;
-  font-size: 15px;
-}
-#your-cart .select2.select2-container {
+#cart .quantity .select2.select2-container {
   width: 200px !important;
 }
-#your-cart .table-striped tbody tr:nth-of-type(even) {
-  background-color: #f8f9f9;
+#cart .shipping .title,
+#cart .shipping .value,
+#cart .subtotal .title,
+#cart .subtotal .value {
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 150px;
 }
-#your-cart .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #fff;
+#cart .shipping .title {
+  font-weight: 300 !important;
 }
-#your-cart .cost .title {
-  width: 150px;
+#cart .shipping .value {
+  color: #69ac34 !important;
 }
-#your-cart .cost .value {
-  width: 100px;
+
+#offers .offer .select2.select2-container {
+  width: 100% !important;
+  margin-bottom: 12px !important;
 }
-#your-cart .total .title,
-#your-cart .total .value {
+#offers .offer .title {
+  font-size: 1rem;
   font-weight: 700;
 }
-#your-cart .shipping .value {
+#offers .offer .desc {
+  line-height: 1.4;
+  font-size: 0.85rem;
+  font-style: normal;
+}
+#offers .offer .price {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f32261 !important;
+}
+#offers .offer .price .discount {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 300;
+  padding: 0 10px;
+}
+#offers .offer .price .save {
   color: #69ac34 !important;
+  font-size: 0.875rem;
+  background-color: #e4f0db;
+  padding: 2px 5px;
+  font-weight: 300;
+}
+#customers .customer {
+  text-align: center;
+  align-items: center;
+  border: solid 1px rgb(192, 192, 192);
+}
+#customers .customer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#customers .customer .title {
+  font-size: 16px;
+  font-weight: 700;
+}
+#customers .customer .desc,
+#customers .customer .name {
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+
+@media all and (max-width: 991px) {
+  #cart .products .pheader {
+    display: none !important;
+  }
+  #cart .products .prow {
+    display: flex;
+    flex-wrap: wrap !important;
+  }
+  #cart .products .product {
+    flex: 1 1 70%;
+  }
+  #cart .products .product img {
+    max-width: 60px;
+    flex: 0 1 60px;
+  }
+  #cart .products .details {
+    text-align: right;
+    flex: 1 1 30%;
+    justify-content: flex-end;
+  }
+  #cart .products .price,
+  #cart .products .quantity,
+  #cart .products .total {
+    flex: 1 1 auto;
+  }
+  #cart .products .total {
+    justify-content: flex-end;
+  }
 }

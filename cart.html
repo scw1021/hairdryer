@@ -181,6 +181,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto d-flex align-items-center">
             <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Catalog</a>
+            </li>
+            <li class="nav-item mr-4">
               <a class="nav-link text-light" href="#">Track my order</a>
             </li>
             <li class="nav-item mr-4">
@@ -204,76 +207,343 @@
     </nav>
     <!-- Close Header -->
 
-    <section id="your-cart">
-      <div class="container py-4">
-        <h1 class="text-center mb-4">Your Cart</h1>
+    <div id="cart" class="container">
+      <h1 class="my-5 text-center">Your Cart</h1>
 
-        <table class="table table-borderless text-left w-100 table-striped">
-          <thead>
-            <tr>
-              <th>PRODUCT</th>
-              <th>DETAILS</th>
-              <th>PRICE</th>
-              <th>QUANTITY</th>
-              <th>TOTAL</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="product">
-              <td>
-                <div class="d-flex product-info align-items-center">
-                  <img src="assets/img/p-1.jpg" class="mr-3" alt="" />
-                  <div class="product-details">
-                    <p class="mb-0"><b>Jersey Square Nect</b></p>
-                    <p class="mb-0">SKU: JSN014</p>
-                  </div>
-                </div>
-              </td>
-              <td>Small - Red</td>
-              <td>$59.00</td>
-              <td>
-                <select name="amount" class="form-control amount">
-                  <option value="1">1</option>
-                  <option value="1">2</option>
-                </select>
-              </td>
-              <td>$59.00</td>
-            </tr>
-            <tr class="product">
-              <td>
-                <div class="d-flex product-info align-items-center">
-                  <img src="assets/img/p-1.jpg" class="mr-3" alt="" />
-                  <div class="product-details">
-                    <p class="mb-0"><b>Jersey Square Nect</b></p>
-                    <p class="mb-0">SKU: JSN014</p>
-                  </div>
-                </div>
-              </td>
-              <td>Small - Red</td>
-              <td>$59.00</td>
-              <td>
-                <select name="amount" class="form-control amount">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                </select>
-              </td>
-              <td>$59.00</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="products mb-3">
+        <div class="pheader d-flex">
+          <div class="product">PRODUCT</div>
+          <div class="details">DETAILS</div>
+          <div class="price">PRICE</div>
+          <div class="quantity">QUANTITY</div>
+          <div class="total">TOTAL</div>
+        </div>
 
-        <div class="w-100 cost">
-          <div class="shipping d-flex justify-content-end my-4">
-            <div class="title">SHIPPING</div>
-            <div class="value">FREE</div>
+        <div class="pbody">
+          <div class="prow d-flex" id="prow-1">
+            <div class="product d-flex">
+              <img src="assets/img/p-1.jpg" alt="" />
+              <div class="pinfo d-flex justify-content-center flex-column">
+                <p class="name">Jersey Square Neck</p>
+                <p class="sku">SKU: JSN014</p>
+              </div>
+            </div>
+            <div class="details">Small - Red</div>
+            <div class="price">$59.00</div>
+            <div class="quantity">
+              <select name="quantity-1" id="quantity-1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="total">$59.00</div>
           </div>
-          <div class="total d-flex justify-content-end mb-4">
-            <div class="title">SUBTOTAL</div>
-            <div class="value">$347.00</div>
+          <div class="prow d-flex" id="prow-2">
+            <div class="product d-flex">
+              <img src="assets/img/p-1.jpg" alt="" />
+              <div class="pinfo d-flex justify-content-center flex-column">
+                <p class="name">Jersey Square Neck</p>
+                <p class="sku">SKU: JSN014</p>
+              </div>
+            </div>
+            <div class="details">Small - Red</div>
+            <div class="price">$59.00</div>
+            <div class="quantity">
+              <select name="quantity-2" id="quantity-2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="total">$59.00</div>
+          </div>
+          <div class="prow d-flex" id="prow-3">
+            <div class="product d-flex">
+              <img src="assets/img/p-1.jpg" alt="" />
+              <div class="pinfo d-flex justify-content-center flex-column">
+                <p class="name">Jersey Square Neck</p>
+                <p class="sku">SKU: JSN014</p>
+              </div>
+            </div>
+            <div class="details">Small - Red</div>
+            <div class="price">$59.00</div>
+            <div class="quantity">
+              <select name="quantity-3" id="quantity-3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="total">$59.00</div>
+          </div>
+          <div class="prow d-flex" id="prow-4">
+            <div class="product d-flex">
+              <img src="assets/img/p-1.jpg" alt="" />
+              <div class="pinfo d-flex justify-content-center flex-column">
+                <p class="name">Jersey Square Neck</p>
+                <p class="sku">SKU: JSN014</p>
+              </div>
+            </div>
+            <div class="details">Small - Red</div>
+            <div class="price">$59.00</div>
+            <div class="quantity">
+              <select name="quantity-4" id="quantity-4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="total">$59.00</div>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="shipping mb-4 d-flex justify-content-end">
+        <div class="title">SHIPPING</div>
+        <div class="value">FREE</div>
+      </div>
+      <div class="subtotal mb-5 d-flex justify-content-end">
+        <div class="title">SUBTOTAL</div>
+        <div class="value">$347.00</div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-6"></div>
+        <div class="col-md-3 mb-3">
+          <button class="cbtn cbtn-default cbtn-block">
+            Continue Shopping
+          </button>
+        </div>
+        <div class="col-md-3">
+          <button class="cbtn cbtn-warning cbtn-block">
+            PROCEED TO CHECKOUT
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-5 container" id="offers">
+      <h2
+        class="oheader py-3 border-top border-bottom border-light text-center"
+      >
+        SPECIAL OFFERS JUST FOR YOU
+      </h2>
+
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="offer mb-4">
+            <img src="assets/img/Product-13.jpg" alt="" width="100%" />
+            <h3 class="mb-2 mt-3 title">Jersey Square Neck Top Black</h3>
+            <p class="desc mb-2">
+              Refresh a daytime profile with this lightweight jersey top from
+              our exclusive
+            </p>
+            <div class="star-rating w-100 mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$70.00</p>
+            <div class="size">
+              <select>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+            <div class="color">
+              <select>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+              </select>
+            </div>
+            <button class="cbtn cbtn-warning cbtn-block">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="offer mb-4">
+            <img src="assets/img/Product-21.jpg" alt="" width="100%" />
+            <h3 class="mb-2 mt-3 title">Front Tie Strapless Dress Purple</h3>
+            <p class="desc mb-2">
+              Strapless design features a casually-tied obi-style belt at the
+              waist to softly
+            </p>
+            <div class="star-rating w-100 mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">
+              $59.00
+              <span class="discount">$99.00</span>
+              <span class="save">SAVE $45.00</span>
+            </p>
+            <div class="size">
+              <select>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+            <div class="color">
+              <select>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+              </select>
+            </div>
+            <button class="cbtn cbtn-warning cbtn-block">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="offer mb-4">
+            <img src="assets/img/Product-31.jpg" alt="" width="100%" />
+            <h3 class="mb-2 mt-3 title">Grained Knitwear Beige</h3>
+            <p class="desc mb-2">
+              Movie dates and shopping trips call for something casual, yet
+              stylish like Forever
+            </p>
+            <div class="star-rating w-100 mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star unrated"></i>
+            </div>
+            <p class="price">$55.00</p>
+            <div class="size">
+              <select>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+            <div class="color">
+              <select>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+              </select>
+            </div>
+            <button class="cbtn cbtn-warning cbtn-block">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="offer mb-4">
+            <img src="assets/img/Product-41.jpg" alt="" width="100%" />
+            <h3 class="mb-2 mt-3 title">Frill Trim Bardot Sweater Blue</h3>
+            <p class="desc mb-2">
+              Enhance your style quotient with this bardot sweater by LOST INK.
+              Made of
+            </p>
+            <div class="star-rating w-100 mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star unrated"></i>
+            </div>
+            <p class="price">$45.00</p>
+            <div class="size">
+              <select>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+            <div class="color">
+              <select>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+              </select>
+            </div>
+            <button class="cbtn cbtn-warning cbtn-block">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5" id="customers">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="h-100 customer d-flex flex-column p-4">
+            <img src="assets/img/r-1.jpg" class="mb-2" alt="" />
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="title">I’ve Been Searching For this</p>
+            <p class="desc">
+              So Happy i decided to buy these, best quality i own. Highly
+              Recommend!
+            </p>
+            <p class="name">- Amanda Smoth</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="h-100 customer d-flex flex-column p-4">
+            <img src="assets/img/r-2.jpg" class="mb-2" alt="" />
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="title">The Best Purchase Ever!</p>
+            <p class="desc">
+              So Happy i decided to buy these, best quality i own. Highly
+              Recommend!
+            </p>
+            <p class="name">- Amanda Smoth</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="h-100 customer d-flex flex-column p-4">
+            <img src="assets/img/r-3.jpg" class="mb-2" alt="" />
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="title">Amazing Quality !!</p>
+            <p class="desc">
+              So Happy i decided to buy these, best quality i own. Highly
+              Recommend!
+            </p>
+            <p class="name">- Amanda Smoth</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Start Footer -->
     <footer id="hairdryer_footer">

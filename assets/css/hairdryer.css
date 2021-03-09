@@ -490,6 +490,46 @@ nav.navbar {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+.cbtn {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  border: solid 1px #000;
+  transition: all 0.4s;
+}
+.cbtn-block {
+  width: 100%;
+}
+.cbtn-default {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+}
+.cbtn-default:hover {
+  border-color: #000;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.cbtn-warning {
+  border-color: #d5ab46 !important;
+  background-color: #d5ab46 !important;
+  color: #fff !important;
+}
+.cbtn-warning:hover {
+  background-color: #fff !important;
+  color: #d5ab46 !important;
+}
+#offers .oheader {
+  color: #f32261 !important;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.star-rating i {
+  color: #d5ab46;
+}
+.star-rating i.unrated {
+  color: #aaa;
+}
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 {
     font-size: 1em !important;
@@ -504,7 +544,7 @@ nav.navbar {
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .mobile {
     display: none;
   }
@@ -535,13 +575,20 @@ nav.navbar {
     width: 250px;
   }
 }
+@media all and (max-width: 991px) {
+  .payments i {
+    font-size: 40px;
+  }
+}
 @media all and (max-width: 767px) {
   #hairdryer_footer {
     text-align: center;
     background-color: #000;
   }
-}
-@media all and (max-width: 767px) {
+  .footer-bottom .all-rights,
+  .footer-bottom .social-links p {
+    text-align: center !important;
+  }
   #hairdryer_footer .payments,
   #hairdryer_footer .links,
   #hairdryer_footer .contacts {
@@ -551,6 +598,8 @@ nav.navbar {
     justify-content: center !important;
   }
 }
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
+  .payments i {
+    font-size: 50px;
+  }
 }
