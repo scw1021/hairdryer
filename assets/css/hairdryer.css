@@ -643,6 +643,17 @@ nav.navbar {
   #hairdryer_footer .payments .justify-content-around {
     justify-content: center !important;
   }
+  .alarm {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  .alarm-pink .fas {
+    font-size: 20px;
+  }
+  .alarm .fa-times {
+    right: 25px;
+    top: 12px;
+  }
 }
 @media (max-width: 1200px) {
   .payments i {
