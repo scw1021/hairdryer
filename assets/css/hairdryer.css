@@ -555,6 +555,27 @@ nav.navbar {
 .star-rating i.unrated {
   color: #aaa;
 }
+.alarm {
+  position: relative;
+  font-size: 25px;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+.alarm-pink .fas {
+  color: #fff200;
+  font-size: 40px;
+}
+.alarm .fa-times {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  color: white !important;
+  cursor: pointer;
+}
+.alarm-pink {
+  background: #f32261;
+  color: white;
+}
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 {
     font-size: 1em !important;

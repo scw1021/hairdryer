@@ -178,3 +178,57 @@ body {
     font-size: 15px;
   }
 }
+
+/* popup 04 */
+#popup-4 {
+  width: 780px;
+}
+#popup-4 .offer .select2.select2-container {
+  width: 100% !important;
+  margin-bottom: 12px !important;
+}
+#popup-4 .offer .title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+#popup-4 .offer .desc {
+  line-height: 1.4;
+  font-size: 0.85rem;
+  font-style: normal;
+}
+#popup-4 .offer .price {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f32261 !important;
+}
+#popup-4 .offer .price .discount {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 300;
+  padding: 0 10px;
+}
+#popup-4 .offer .price .save {
+  color: #69ac34 !important;
+  font-size: 0.875rem;
+  background-color: #e4f0db;
+  padding: 2px 5px;
+  font-weight: 300;
+}
+#popup-4 .stock i {
+  font-size: 20px;
+}
+#popup-4 .stock {
+  color: #f32261 !important;
+  font-size: 16px;
+}
+#popup-4 .offers {
+  background: #eee;
+}
+@media all and (max-width: 767px) {
+  #popup-4 {
+    width: 100%;
+  }
+}
