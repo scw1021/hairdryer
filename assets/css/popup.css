@@ -2,6 +2,12 @@ body {
   background: rgb(242, 242, 242);
 }
 
+a {
+  font-weight: 300;
+  text-decoration: underline;
+  color: #478ac9 !important;
+}
+
 /* popup 01 */
 #popup-1 {
   width: 600px;
@@ -73,5 +79,102 @@ body {
 @media all and (max-width: 767px) {
   #popup-2 {
     width: 100%;
+  }
+}
+
+/* popup 03 */
+#popup-3 {
+  width: 800px;
+  padding: 30px;
+  background: #fff;
+}
+#popup-3 h1 {
+  width: 500px;
+  font-size: 30px;
+  font-weight: 400;
+}
+#popup-3 h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+#popup-3 .img {
+  width: 100%;
+  height: 100%;
+  background: url("../img/Product-61.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#popup-3 .select2.select2-container {
+  width: 100% !important;
+  margin-bottom: 12px !important;
+}
+#popup-3 .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+#popup-3 .desc {
+  line-height: 1.4;
+  font-size: 0.85rem;
+  font-style: normal;
+  color: rgb(128, 128, 128);
+}
+#popup-3 .stock i {
+  font-size: 25px;
+}
+#popup-3 .stock {
+  color: #f32261 !important;
+}
+#popup-3 .price {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f32261 !important;
+}
+#popup-3 .price .discount {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 300;
+  padding: 0 10px;
+}
+#popup-3 .price .save {
+  color: #69ac34 !important;
+  font-size: 0.875rem;
+  background-color: #e4f0db;
+  padding: 2px 5px;
+  font-weight: 300;
+}
+#popup-3 .divider {
+  width: 100px;
+  height: 3px;
+  border-color: #f32261;
+  margin: 0 auto 15px;
+  stroke: #f32261;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-width: 2px;
+  border-style: solid;
+}
+@media all and (max-width: 991px) {
+  #popup-3 {
+    width: 600px;
+  }
+}
+@media all and (max-width: 767px) {
+  #popup-3 {
+    width: 100%;
+  }
+  #popup-3 .img {
+    margin-bottom: 30px;
+    height: 600px;
+  }
+  #popup-3 h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+  #popup-3 h2 {
+    font-size: 15px;
   }
 }
