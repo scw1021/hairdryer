@@ -2,12 +2,6 @@ body {
   background: rgb(242, 242, 242);
 }
 
-a {
-  font-weight: 300;
-  text-decoration: underline;
-  color: #478ac9 !important;
-}
-
 /* popup 01 */
 #popup-1 {
   width: 600px;
@@ -34,8 +28,9 @@ a {
   font-size: 0.875rem;
 }
 #popup-1 a {
-  color: rgb(169, 170, 173);
   text-decoration: underline !important;
+  font-weight: 300;
+  color: #478ac9 !important;
 }
 @media all and (max-width: 767px) {
   #popup-1 {
@@ -156,6 +151,11 @@ a {
   border-bottom-width: 0;
   border-width: 2px;
   border-style: solid;
+}
+#popup-3 a {
+  text-decoration: underline !important;
+  font-weight: 300;
+  color: #478ac9 !important;
 }
 @media all and (max-width: 991px) {
   #popup-3 {
