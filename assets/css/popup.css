@@ -1,0 +1,33 @@
+/* popup 01 */
+#popup-1 {
+  width: 600px;
+  background-color: #222533;
+  color: white;
+  padding: 40px 120px;
+}
+#popup-1 h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+#popup-1 h1 p {
+  font-weight: 700;
+  font-size: 4.5rem;
+  margin: 0;
+}
+#popup-1 .btn-get-code {
+  width: 210px;
+}
+#popup-1 input {
+  border-radius: 0.45rem !important;
+}
+#popup-1 a {
+  color: rgb(169, 170, 173);
+  text-decoration: underline !important;
+}
+@media all and (max-width: 767px) {
+  #popup-1 {
+    width: 100%;
+    padding: 40px 15px;
+  }
+}

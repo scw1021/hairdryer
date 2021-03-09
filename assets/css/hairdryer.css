@@ -491,6 +491,7 @@ nav.navbar {
   transform: rotate(45deg);
 }
 .cbtn {
+  outline: none !important;
   font-size: 16px;
   font-weight: 700;
   padding: 10px;
@@ -518,6 +519,18 @@ nav.navbar {
 .cbtn-warning:hover {
   background-color: #fff !important;
   color: #d5ab46 !important;
+}
+.cbtn-error {
+  border-color: #f32261 !important;
+  background-color: #f32261 !important;
+  color: #fff !important;
+}
+.cbtn-error:hover {
+  background-color: #fff !important;
+  color: #f32261 !important;
+}
+.cbtn-circle {
+  border-radius: 25px !important;
 }
 #offers .oheader {
   color: #f32261 !important;
