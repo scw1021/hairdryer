@@ -262,3 +262,51 @@ body {
     font-size: 1.5rem;
   }
 }
+
+/* popup 05 */
+#popup-5 {
+  width: 680px;
+}
+#popup-5 .header {
+  color: #ffffff;
+  background-color: #222533;
+  padding: 20px 30px 60px;
+}
+#popup-5 .header .btn-close {
+  text-align: right;
+  width: 25px;
+  cursor: pointer;
+}
+#popup-5 .header .icon-cart {
+  margin: 20px auto;
+  width: 64px;
+}
+#popup-5 h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #f32261 !important;
+  margin-bottom: 20px;
+}
+#popup-5 h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: white;
+}
+#popup-5 .form-body {
+  background: #fff !important;
+  padding: 45px 120px;
+}
+#popup-5 .form-body input {
+  border-radius: 10px;
+}
+@media all and (max-width: 767px) {
+  #popup-5 {
+    width: 100%;
+  }
+  #popup-5 .header {
+    padding: 20px;
+  }
+  #popup-5 .form-body {
+    padding: 30px 15px;
+  }
+}
