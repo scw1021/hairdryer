@@ -1,0 +1,32 @@
+#login {
+  margin: 150px auto;
+  width: 420px;
+}
+#login h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#login input {
+  border-color: #ddd;
+  font-size: 13px;
+  padding: 22px 16px;
+}
+#login button {
+  width: 220px;
+  border-radius: 6px;
+}
+#login a {
+  font-size: 0.875rem;
+  border-bottom: solid 1px;
+  padding-bottom: 3px;
+}
+#login a:hover {
+  text-decoration: none;
+}
+@media all and (max-width: 767px) {
+  #login {
+    margin: 30px auto;
+    padding: 0 15px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+#track-my-order {
+  margin: 150px auto;
+  width: 420px;
+}
+#track-my-order h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#track-my-order input {
+  border-color: #ddd;
+  font-size: 13px;
+  padding: 22px 16px;
+}
+#track-my-order button {
+  width: 220px;
+  border-radius: 6px;
+}
+#track-my-order a {
+  font-size: 0.875rem;
+  border-bottom: solid 1px;
+  padding-bottom: 3px;
+}
+#track-my-order a:hover {
+  text-decoration: none;
+}
+@media all and (max-width: 767px) {
+  #track-my-order {
+    margin: 30px auto;
+    padding: 0 15px;
+    width: 100%;
+  }
+}
