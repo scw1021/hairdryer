@@ -560,6 +560,24 @@ nav.navbar {
   background-color: #fff !important;
   color: #f32261 !important;
 }
+.cbtn-black {
+  border-color: #000 !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.cbtn-black:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.cbtn-white {
+  border-color: #000 !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.cbtn-white:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
 .cbtn-circle {
   border-radius: 25px !important;
 }
