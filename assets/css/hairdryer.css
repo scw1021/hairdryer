@@ -598,6 +598,20 @@ nav.navbar {
   background: #f32261;
   color: white;
 }
+.divider-dotted {
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.divider-dotted li {
+  width: 40px;
+  height: 3px;
+  background: #d5ab46;
+  margin: 20px 5px 40px;
+}
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 {
     font-size: 1em !important;
