@@ -74,7 +74,9 @@ $(function () {
       country +
       "'></span>&nbsp;/ " +
       language;
-    $("#country-language-mobile").html(html);
+    var htmlMobile =
+      "<span class='flag-icon flag-icon-" + country + "'></span>";
+    $("#country-language-mobile").html(htmlMobile);
     $("#country-language").html(html);
   }
 
