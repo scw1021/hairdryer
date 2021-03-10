@@ -422,3 +422,38 @@ body {
     font-size: 20px;
   }
 }
+
+/* popup-08 */
+#popup-8 {
+  padding: 30px;
+  background: #fff;
+}
+#popup-8 .product .img {
+  flex: 0 1 60px;
+  min-width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: top;
+}
+#popup-8 .product .info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+#popup-8 .product .info p {
+  font-size: 0.875rem !important;
+}
+#popup-8 .product .discount {
+  color: rgb(153, 153, 153);
+  text-decoration: line-through;
+}
+@media all and (max-width: 991px) {
+  #popup-8 .product .img {
+    flex: 0 1 80px;
+    min-width: 80px;
+    height: 100px;
+  }
+  #popup-8 .product button {
+    width: 100%;
+  }
+}
