@@ -107,7 +107,7 @@
   padding: 2px 5px;
   font-weight: 300;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 991px) {
   #thank-you .quiz .deal-25 {
     width: 100%;
     padding: 30px 15px;
