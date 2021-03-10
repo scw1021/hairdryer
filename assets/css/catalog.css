@@ -1,0 +1,48 @@
+#catalog .offer .title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+#catalog .offer .desc {
+  line-height: 1.4;
+  font-size: 0.85rem;
+  font-style: normal;
+}
+#catalog .offer .price {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f32261 !important;
+}
+#catalog .offer .price .discount {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 300;
+  padding: 0 10px;
+}
+#catalog .offer .price .save {
+  color: #69ac34 !important;
+  font-size: 0.875rem;
+  background-color: #e4f0db;
+  padding: 2px 5px;
+  font-weight: 300;
+}
+#catalog h1 {
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 1.875rem;
+}
+#catalog h3.title.highlighted {
+  color: #f32261 !important;
+}
+#catalog h1 i {
+  color: #d5ab46;
+}
+
+@media all and (max-width: 991px) {
+  #catalog h1 {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
+}
