@@ -14,4 +14,9 @@ $(function () {
   $("#popup-5 .btn-close").click(function () {
     $("#popup-5").remove();
   });
+
+  // popup 05
+  $("#popup-6 .btn-close").click(function () {
+    $("#popup-6").remove();
+  });
 });

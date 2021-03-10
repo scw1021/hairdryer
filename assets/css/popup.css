@@ -1,6 +1,9 @@
 body {
   background: rgb(242, 242, 242);
 }
+.btn-close {
+  cursor: pointer;
+}
 
 /* popup 01 */
 #popup-1 {
@@ -308,5 +311,38 @@ body {
   }
   #popup-5 .form-body {
     padding: 30px 15px;
+  }
+}
+
+/* popup 06 */
+#popup-6 {
+  width: 800px;
+  margin: 0 auto;
+}
+#popup-6 .header {
+  padding: 1rem;
+  background: rgb(217, 217, 217);
+}
+#popup-6 .header h1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+#popup-6 .body {
+  background: #fff;
+}
+#popup-6 .body table {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+#popup-6 .body table tbody td,
+#popup-6 .body table thead th {
+  vertical-align: middle;
+}
+@media all and (max-width: 767px) {
+  #popup-6 {
+    width: 100%;
   }
 }
