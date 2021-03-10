@@ -630,6 +630,24 @@ nav.navbar {
   background: #d5ab46;
   margin: 20px 5px 40px;
 }
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fff !important;
+}
+.w-20 {
+  width: 20% !important;
+}
+.w-40 {
+  width: 40% !important;
+}
+.text-bold {
+  font-weight: 700 !important;
+}
+b {
+  font-weight: 700 !important;
+}
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 {
     font-size: 1em !important;
