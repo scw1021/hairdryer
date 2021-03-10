@@ -33,6 +33,7 @@ body {
 #popup-1 a {
   text-decoration: underline !important;
   font-weight: 300;
+  font-size: 0.87rem;
   color: #478ac9 !important;
 }
 @media all and (max-width: 767px) {
@@ -158,6 +159,7 @@ body {
 #popup-3 a {
   text-decoration: underline !important;
   font-weight: 300;
+  font-size: 0.87rem;
   color: #478ac9 !important;
 }
 @media all and (max-width: 991px) {
@@ -349,4 +351,74 @@ body {
 
 /* popup 07 */
 #popup-7 {
+  width: 1033px;
+}
+#popup-7 .offers {
+  background-color: #fff;
+}
+#popup-7 .offer .select2.select2-container {
+  width: 100% !important;
+  margin-bottom: 12px !important;
+}
+#popup-7 .offer .title {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+#popup-7 .offer .desc {
+  line-height: 1.4;
+  font-size: 0.85rem;
+  font-style: normal;
+  color: #808080;
+}
+#popup-7 .offer .price {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f32261 !important;
+}
+#popup-7 .offer .price .discount {
+  text-decoration: line-through;
+  font-size: 0.85rem;
+  color: #000;
+  font-weight: 300;
+  padding: 0 10px;
+}
+#popup-7 .offer img {
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+}
+#popup-7 .offer .price .save {
+  color: #69ac34 !important;
+  font-size: 0.85rem;
+  background-color: #e4f0db;
+  padding: 2px 5px;
+  font-weight: 300;
+}
+#popup-7 .stock i {
+  font-size: 20px;
+}
+#popup-7 .stock {
+  font-size: 16px;
+  color: #f32261 !important;
+}
+#popup-7 a {
+  text-decoration: underline !important;
+  font-weight: 300;
+  color: #478ac9 !important;
+  font-size: 0.87rem;
+}
+#popup-7 h1 {
+  color: #f32261 !important;
+  font-size: 30px;
+  font-weight: 700;
+}
+@media all and (max-width: 1200px) {
+  #popup-7 {
+    width: 100%;
+  }
+  #popup-7 h1 {
+    font-size: 20px;
+  }
 }

@@ -19,4 +19,8 @@ $(function () {
   $("#popup-6 .btn-close").click(function () {
     $("#popup-6").remove();
   });
+
+  // popup 07
+  $("#popup-7 .offer .color select").select2({ minimumResultsForSearch: -1 });
+  $("#popup-7 .offer .size select").select2({ minimumResultsForSearch: -1 });
 });
