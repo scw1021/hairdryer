@@ -127,4 +127,8 @@ $(function () {
   setTimeout(function () {
     $(".btn-cart button").removeClass("btn-wobble");
   }, 10000);
+
+  $(".btn-buy").click(function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });

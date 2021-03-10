@@ -50,19 +50,14 @@ div {
   background: #555;
 }
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid,
-  .navbar-expand-lg > .container-lg,
-  .navbar-expand-lg > .container-md,
-  .navbar-expand-lg > .container-sm,
-  .navbar-expand-lg > .container-xl {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+  .navbar-expand-lg > .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }
 /* General */
 .logo {
-  width: 200px;
+  width: 170px;
 }
 .mobile {
   display: block;
@@ -111,6 +106,9 @@ nav.navbar {
   background: #000 !important;
   border: none !important;
   margin: 0 !important;
+}
+.navbar-brand {
+  margin-right: 0 !important;
 }
 .navbar .cart img {
   filter: brightness(0) invert(1);
@@ -311,9 +309,6 @@ nav.navbar {
   height: 6px;
 }
 
-#hairdryer_nav_top .select-group {
-  display: flex !important;
-}
 .select-group {
   position: relative;
 }
@@ -342,22 +337,31 @@ nav.navbar {
   width: 20px;
 }
 .select2-container--open {
-  min-width: 200px !important;
+  /* min-width: 200px !important; */
 }
-.dropdown-menu#country-language {
+#currency ~ .select2.select2-container,
+#currency-mobile ~ .select2.select2-container {
+  width: 100px !important;
+}
+.dropdown-menu#country-language,
+.dropdown-menu#country-language-mobile {
   width: 220px !important;
   margin-top: 15px;
   box-shadow: 0 2px 18px rgb(0 0 0 / 40%);
   border-radius: 6px;
 }
-#country-language-menu {
+#country-language-menu,
+#country-language-menu-mobile {
   left: auto !important;
   right: 0 !important;
   box-shadow: 0 2px 18px rgb(0 0 0 / 40%);
-  margin-top: 15px;
+  margin-top: 19px;
+  border-radius: 6px;
 }
 #select2-country-container,
-#select2-language-container {
+#select2-language-container,
+#select2-country-mobile-container,
+#select2-language-mobile-container {
   min-width: 200px;
 }
 .select2-search {
@@ -382,15 +386,22 @@ nav.navbar {
 }
 .select2-results__option--highlighted {
   background-color: #ddd !important;
+  color: #000 !important;
+}
+.select2-results__option--selected {
+  color: #f32261 !important;
 }
 #country,
-#language {
+#language,
+#country-mobile,
+#language-mobile {
   width: 100% im !important;
 }
 .select2 .select2-selection {
   outline: none !important;
 }
-#currency ~ .select2 .select2-selection {
+#currency ~ .select2 .select2-selection,
+#currency-mobile ~ .select2 .select2-selection {
   border: none !important;
   text-align: right;
   font-size: 18px !important;
@@ -420,6 +431,16 @@ nav.navbar {
 }
 #country-language button {
   background: #f32261;
+}
+.select-group.mobile * {
+  font-size: 0.75rem !important;
+}
+.select-group.mobile .dropdown-toggle,
+.select-group.mobile #select2-currency-mobile-container {
+  color: white !important;
+}
+#currency-mobile ~ .select2 .select2-selection {
+  background-color: transparent;
 }
 .social-links i {
   font-size: 25px;
@@ -470,7 +491,8 @@ nav.navbar {
   border: 2px solid #000;
   box-shadow: 0 1px 2px rgb(0 0 0 / 5%),
     inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
-  padding: 10px;
+  width: 24px !important;
+  height: 24px !important;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -482,7 +504,7 @@ nav.navbar {
   content: "";
   display: block;
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 9px;
   width: 6px;
   height: 14px;
@@ -592,10 +614,10 @@ nav.navbar {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 991px) {
   .mobile {
-    display: none;
+    display: none !important;
   }
   .desktop {
-    display: block;
+    display: flex !important;
   }
   #hairdryer_main_nav .navbar-nav {
     max-width: 550px;
@@ -613,7 +635,7 @@ nav.navbar {
     width: 12px;
     height: 12px;
   }
-  #hairdryer_nav_top .select-group {
+  .select-group {
     margin: 0 0;
     display: flex !important;
   }
@@ -624,6 +646,9 @@ nav.navbar {
 @media all and (max-width: 991px) {
   .payments i {
     font-size: 40px;
+  }
+  .select-group.desktop {
+    display: none !important;
   }
 }
 @media all and (max-width: 767px) {

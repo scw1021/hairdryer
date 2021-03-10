@@ -33,11 +33,8 @@ $(function () {
       "'></span>&nbsp;/ " +
       language;
     $("#country-language").html(html);
-    // $("#country-language-menu").removeClass("show");
+    $("#country-language-mobile").html(html);
   }
-  // $(".btn-save").click(function () {
-  //   updateLangCountry();
-  // });
 
   $("#language").change(updateLangCountry);
   $("#country").change(updateLangCountry);
@@ -55,9 +52,60 @@ $(function () {
       event.stopPropagation();
     });
 
+  //////////////////////////////////////
+  $("#currency-mobile").select2();
+  $("#country-mobile").select2({
+    width: "100%",
+    minimumResultsForSearch: -1,
+    templateResult: formatState,
+    templateSelection: formatState,
+  });
+  $("#language-mobile").select2({
+    width: "100%",
+    minimumResultsForSearch: -1,
+  });
+
+  // country language selector action
+  function updateLangCountryMobile() {
+    var country = $("#country-mobile").val();
+    var language = $("#select2-language-mobile-container").text();
+    var html =
+      "<span class='flag-icon flag-icon-" +
+      country +
+      "'></span>&nbsp;/ " +
+      language;
+    $("#country-language-mobile").html(html);
+    $("#country-language").html(html);
+  }
+
+  $("#language-mobile").change(updateLangCountryMobile);
+  $("#country-mobile").change(updateLangCountryMobile);
+
+  // disable language-country selector close when click inside
+  // Clicking dropdown button will toggle display
+  function dropdownToggle() {
+    document.getElementById("Dropdown").classList.toggle("show");
+  }
+
+  // Prevents menu from closing when clicked inside
+  document
+    .getElementById("country-language-menu")
+    .addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+
+  document
+    .getElementById("country-language-menu-mobile")
+    .addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+
   // Closes the menu in the event of outside click
   window.onclick = function (event) {
-    if (!event.target.matches("#country-language")) {
+    if (
+      !event.target.matches("#country-language") &&
+      !event.target.matches("#country-language-mobile")
+    ) {
       var dropdowns = document.getElementsByClassName("dropdown-menu");
 
       var i;
@@ -69,4 +117,22 @@ $(function () {
       }
     }
   };
+
+  $("#currency").change(function () {
+    console.log("asdf");
+    $("#currency-mobile").val($(this).val());
+    $("#currency-mobile").trigger("change.select2");
+  });
+  $("#currency-mobile").change(function () {
+    $("#currency").val($(this).val());
+    $("#currency").trigger("change.select2");
+  });
+
+  $("#select2-currency-container").click(function () {
+    $(".select2-dropdown").css({ width: "200px" });
+  });
+
+  $("#select2-currency-mobile-container").click(function () {
+    $(".select2-dropdown").css({ width: "200px" });
+  });
 });

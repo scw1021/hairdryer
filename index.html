@@ -85,7 +85,9 @@
               </div>
             </div>
           </div>
-          <div class="d-flex select-group flex-row align-items-center ml-auto">
+          <div
+            class="d-flex select-group desktop flex-row align-items-center ml-auto"
+          >
             <select class="d-inline-block" name="currency" id="currency">
               <option value="eur">EUR (&#128;)</option>
               <option value="gbp">GBP (&#163;)</option>
@@ -172,10 +174,82 @@
         </div>
 
         <div class="mobile">
-          <a class="nav-link text-light cart" href="#">
-            <img src="assets/img/cart.svg" alt="" />
-            <span class="cart-count">5</span>
-          </a>
+          <div
+            class="d-flex select-group mobile flex-row align-items-center ml-auto"
+          >
+            <select class="d-inline-block" name="currency" id="currency-mobile">
+              <option value="eur">EUR (&#128;)</option>
+              <option value="gbp">GBP (&#163;)</option>
+              <option value="usd">USD (&#36;)</option>
+              <option value="cad">Canadian dollar</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+            </select>
+            <div class="dropdown d-inline-block ml-3 dropdown-country-language">
+              <div
+                class="dropdown-toggle"
+                id="country-language-mobile"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="flag-icon flag-icon-us"></span>
+                &nbsp;/ English
+              </div>
+              <div
+                id="country-language-menu-mobile"
+                class="dropdown-menu px-2 pt-4 pb-2"
+                aria-labelledby="country-language-mobile"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="country-mobile">
+                    <span class="pb-2 d-block">Country</span>
+                    <select
+                      class="form-control"
+                      name="country"
+                      id="country-mobile"
+                    >
+                      <option value="us">United Status</option>
+                      <option value="de">Germany</option>
+                      <option value="it">Italy</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="language-mobile" class="form-label">
+                    <span class="pb-2 d-block">Language</span>
+                    <select
+                      class="form-control"
+                      name="language"
+                      id="language-mobile"
+                    >
+                      <option value="en">English</option>
+                      <option value="de">Dutch</option>
+                      <option value="it">Italian</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <a class="nav-link text-light cart" href="#">
+              <img src="assets/img/cart.svg" alt="" />
+              <span class="cart-count">5</span>
+            </a>
+          </div>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -209,7 +283,15 @@
 
     <!-- Start Banner Hero -->
     <section id="banner">
-      <img src="assets/img/banner.png" alt="" />
+      <div class="container">
+        <div class="promotion">
+          <img src="assets/img/product-header-1.png" width="100%" alt="" />
+          <span class="badge-1">
+            We've<br />Shipped Over<br /><b>10,000</b>ORDERS!
+          </span>
+          <span class="badge-2"> 100%<br />ORIGINAL<br />PRODUCT </span>
+        </div>
+      </div>
     </section>
     <!-- End Banner Hero -->
 
@@ -345,7 +427,7 @@
                 <div class="carousel-item">
                   <div class="row mx-0">
                     <div
-                      id="carousel-selector-5"
+                      id="carousel-selector-4"
                       class="thumb col-3 px-1 py-2"
                       data-target="#myCarousel"
                       data-slide-to="4"
@@ -357,7 +439,7 @@
                       />
                     </div>
                     <div
-                      id="carousel-selector-6"
+                      id="carousel-selector-5"
                       class="thumb col-3 px-1 py-2"
                       data-target="#myCarousel"
                       data-slide-to="5"
@@ -368,8 +450,6 @@
                         alt="..."
                       />
                     </div>
-                    <div class="col-3 px-1 py-2"></div>
-                    <div class="col-3 px-1 py-2"></div>
                   </div>
                 </div>
               </div>
@@ -477,7 +557,7 @@
           <div
             class="offer-alert bg-black text-white w-100 px-3 py-1 mb-4 form-group"
           >
-            <input class="mr-2" type="checkbox" id="special-offer" />
+            <input class="mr-2" type="checkbox" id="special-offer" checked />
             <label for="special-offer"
               >Don't Miss this amazing offer $49&nbsp;<b>$99</b></label
             >
@@ -733,7 +813,7 @@
         </div>
         <div class="row btn-cart mb-5">
           <div class="col-md-3 mx-auto">
-            <button class="btn btn-block">PAY NOW</button>
+            <button class="btn btn-block btn-buy">BUY NOW</button>
           </div>
         </div>
       </div>

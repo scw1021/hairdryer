@@ -1,6 +1,56 @@
-#banner img {
+#banner {
   width: 100%;
-  object-fit: contain;
+  background-size: cover !important;
+  background-position: center !important;
+  background: url(../img/bg-header.jpg) no-repeat;
+}
+#banner .container {
+  min-height: 975px;
+  position: relative;
+}
+#banner .container .promotion {
+  position: absolute;
+  width: 60%;
+  right: 0;
+  bottom: 170px;
+}
+#banner .container .promotion .badge-1 {
+  position: absolute;
+  background: url(../img/Orange-tag.png) no-repeat;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  font-size: 1rem;
+  color: white;
+}
+#banner .container .promotion .badge-1 b {
+  font-size: 24px;
+  font-weight: 700;
+}
+#banner .container .promotion .badge-2 {
+  position: absolute;
+  background: url(../img/pink-tag.png) no-repeat;
+  width: 80px;
+  height: 90px;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 60%;
+  bottom: 50px;
+  font-size: 0.75rem;
+  color: white;
+  padding-top: 7px;
 }
 .carousel {
   position: relative;
@@ -103,6 +153,10 @@
 .attrs input {
   height: 38px;
 }
+.attrs .color ~ .select2.select2-container,
+.attrs .size ~ .select2.select2-container {
+  width: 100% !important;
+}
 .attrs select {
   font-weight: 700;
   background: #fff !important;
@@ -111,7 +165,7 @@
   padding: 7px 4px;
   vertical-align: center;
 }
-.offer-alert {
+.attrs table .offer-alert {
   font-size: 16px;
 }
 .offer-alert b {
@@ -313,10 +367,6 @@
   #cart {
     margin-top: 0;
   }
-  #banner img {
-    height: 350px;
-    object-fit: cover;
-  }
   .shipping-item {
     padding: 10px 5px;
   }
@@ -328,6 +378,29 @@
   }
   .offer-counter .separater {
     font-size: 1.8rem;
+  }
+  #banner .container {
+    min-height: 400px;
+  }
+  #banner .container .promotion {
+    bottom: 85px;
+    width: 50%;
+    right: 15px;
+  }
+  #banner .container .promotion .badge-1 {
+    width: 120px;
+    height: 120px;
+    left: -73px;
+    bottom: -41px;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  #banner .container .promotion .badge-2 {
+    width: 70px;
+    height: 80px;
+    left: 54%;
+    bottom: 0px;
+    font-size: 0.65rem;
   }
 }
 @media all and (min-width: 576px) {
