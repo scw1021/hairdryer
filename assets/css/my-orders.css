@@ -1,0 +1,80 @@
+#my-orders {
+}
+#my-orders .header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#my-orders .header .filters .select2.select2-container {
+  text-align: left;
+  width: 200px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+#my-orders .body .order {
+  padding: 15px 0;
+  border-top: solid 1px #e5e5e5;
+}
+#my-orders .body .order .heading {
+  background-color: #f2f2f2;
+  padding: 20px 10px;
+}
+#my-orders .body .order .heading p {
+  font-size: 16px !important;
+  margin: 0;
+}
+#my-orders .body .order .heading p b {
+  font-weight: 700;
+}
+#my-orders .product {
+  display: flex;
+  flex-direction: row;
+}
+#my-orders .product .img {
+  flex: 0 1 250px;
+  padding: 30px;
+}
+#my-orders .product .info {
+  flex: 1 1 auto;
+  padding: 30px;
+}
+#my-orders .product .info h3,
+#my-orders .product .info .title,
+#my-orders .product .info .value {
+  font-size: 16px;
+  font-weight: 700;
+}
+#my-orders .product .info .price,
+#my-orders .product .info .title {
+  font-weight: 400;
+}
+#my-orders .product .info .price {
+  color: #f32261;
+}
+#my-orders .product .info .sku {
+  color: #999999 !important;
+  font-size: 0.875rem;
+}
+#my-orders .product .info .controls a {
+  font-size: 0.875rem;
+  color: #478ac9 !important;
+  text-decoration: none !important;
+}
+#my-orders .product .info .controls button {
+  border-radius: 6px;
+}
+@media all and (max-width: 576px) {
+  #my-orders .product .info,
+  #my-orders .product .img {
+    flex: 1 1 auto !important;
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+  #my-orders .product .info {
+    padding-left: 15px !important;
+  }
+  #my-orders .product .info .controls button {
+    font-size: 12px;
+    padding: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+}
