@@ -33,7 +33,11 @@
   letter-spacing: 5px;
   font-size: 1.875rem;
 }
-#catalog h3.title.highlighted {
+#catalog h3.title a {
+  color: #000;
+  font-weight: 700;
+}
+#catalog h3.title.highlighted a {
   color: #f32261 !important;
 }
 #catalog h1 i {

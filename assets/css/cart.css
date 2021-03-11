@@ -33,6 +33,9 @@
   font-weight: 700;
   margin-bottom: 0;
 }
+#cart .products .product .name a {
+  color: #000;
+}
 #cart .products .product .sku {
   font-size: 12px;
   margin-bottom: 0;
@@ -87,6 +90,9 @@
 #offers .offer .title {
   font-size: 1rem;
   font-weight: 700;
+}
+#offers .offer .title a {
+  color: #000;
 }
 #offers .offer .desc {
   line-height: 1.4;
@@ -162,5 +168,11 @@
   }
   #cart .products .total {
     justify-content: flex-end;
+  }
+}
+@media all and (max-width: 767px) {
+  #offers .offer img {
+    max-width: 250px;
+    margin-left: calc(50% - 125px) !important;
   }
 }

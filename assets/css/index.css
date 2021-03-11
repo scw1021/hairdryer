@@ -211,7 +211,7 @@
 }
 .shipping-item {
   background: #f2f2f2;
-  padding: 10px;
+  padding: 10px 5px;
 }
 .shipping-item b {
   font-weight: 700;
@@ -307,6 +307,10 @@
   font-size: 16px;
   font-weight: 400;
   text-align: justify;
+}
+#customers .customer.border-light {
+  border-color: #eee !important;
+  margin-bottom: 30px;
 }
 #customers .fa-star {
   color: #d5ab46;

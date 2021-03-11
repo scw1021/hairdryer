@@ -79,6 +79,9 @@ body {
   #popup-2 {
     width: 100%;
   }
+  #popup-2 img {
+    width: 60%;
+  }
 }
 
 /* popup 03 */
@@ -107,9 +110,11 @@ body {
   width: 100% !important;
   margin-bottom: 12px !important;
 }
-#popup-3 .title {
+#popup-3 .title a {
   font-size: 1.25rem;
   font-weight: 700;
+  color: #000 !important;
+  text-decoration: none !important;
 }
 #popup-3 .desc {
   line-height: 1.4;
@@ -192,7 +197,8 @@ body {
   width: 100% !important;
   margin-bottom: 12px !important;
 }
-#popup-4 .offer .title {
+#popup-4 .offer .title a {
+  color: #000;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -360,7 +366,9 @@ body {
   width: 100% !important;
   margin-bottom: 12px !important;
 }
-#popup-7 .offer .title {
+#popup-7 .offer .title a {
+  text-decoration: none !important;
+  color: #000 !important;
   font-size: 0.95rem;
   font-weight: 700;
 }
@@ -442,6 +450,9 @@ body {
 }
 #popup-8 .product .info p {
   font-size: 0.875rem !important;
+}
+#popup-8 .product .info p a {
+  color: #000;
 }
 #popup-8 .product .discount {
   color: rgb(153, 153, 153);

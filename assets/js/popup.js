@@ -7,7 +7,7 @@ $(function () {
   $("#popup-4 .offer .color select").select2({ minimumResultsForSearch: -1 });
   $("#popup-4 .offer .size select").select2({ minimumResultsForSearch: -1 });
   $(".btn-hide-alarm").click(function () {
-    $(this).parent().remove();
+    $("#popup-4").remove();
   });
 
   // popup 05

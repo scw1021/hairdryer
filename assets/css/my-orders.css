@@ -37,6 +37,10 @@
   flex: 1 1 auto;
   padding: 30px;
 }
+#my-orders .product .info h3 a {
+  font-weight: 700;
+  color: #000;
+}
 #my-orders .product .info h3,
 #my-orders .product .info .title,
 #my-orders .product .info .value {

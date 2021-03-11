@@ -137,4 +137,24 @@ $(function () {
   $("#select2-currency-mobile-container").click(function () {
     $(".select2-dropdown").css({ width: "200px" });
   });
+
+  var images = [
+    "assets/img/Product-1.jpg",
+    "assets/img/Product-2.jpg",
+    "assets/img/Product-3.jpg",
+    "assets/img/Product-4.jpg",
+    "assets/img/Product-5.jpg",
+    "assets/img/Product-9.jpg",
+    "assets/img/Product-10.jpg",
+    "assets/img/Product-11.jpg",
+    "assets/img/Product-12.jpg",
+  ];
+  $(".size select").change(function () {
+    var img = images[Math.floor(Math.random() * images.length)];
+    $("img", $(this).parent().parent()).attr("src", img);
+  });
+  $(".color select").change(function () {
+    var img = images[Math.floor(Math.random() * images.length)];
+    $("img", $(this).parent().parent()).attr("src", img);
+  });
 });
