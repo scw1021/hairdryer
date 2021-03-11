@@ -146,7 +146,6 @@ $(function () {
     "assets/img/Product-5.jpg",
     "assets/img/Product-9.jpg",
     "assets/img/Product-10.jpg",
-    "assets/img/Product-11.jpg",
     "assets/img/Product-12.jpg",
   ];
   $(".size select").change(function () {
@@ -157,4 +156,25 @@ $(function () {
     var img = images[Math.floor(Math.random() * images.length)];
     $("img", $(this).parent().parent()).attr("src", img);
   });
+
+  var purchaseHtml =
+    '<div class="purchase hide">' +
+    '<i class="fas fa-shopping-cart"></i>' +
+    '<p class="p-user"><b>Jack From Nothampton, United Kingdom</b></p>' +
+    '<p class="p-product">' +
+    'Recently purchased <b><a href="#">Athenley Zip-Up Hoodie</a></b>' +
+    "</p>" +
+    '<p class="p-time">2 minutes ago</p>' +
+    "</div>";
+
+  $("body").append(purchaseHtml);
+  $(".purchase").click(function () {
+    $(".purchase").addClass("hide");
+  });
+  setInterval(function () {
+    $(".purchase").removeClass("hide");
+    setTimeout(function () {
+      $(".purchase").addClass("hide");
+    }, 5000);
+  }, 10000);
 });

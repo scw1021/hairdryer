@@ -654,6 +654,58 @@ nav.navbar {
 b {
   font-weight: 700 !important;
 }
+.purchase {
+  height: 100px;
+  position: fixed;
+  left: 15px;
+  top: calc(100vh - 115px);
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: -2px 3px 8px 5px rgb(0 0 0 / 30%);
+  border-radius: 50px;
+  padding: 10px 30px 10px 100px;
+  transition: all 0.5s;
+}
+.purchase.hide {
+  transform: translate(-600px, 0px);
+}
+.purchase i {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  color: white;
+  background: #d5ab46;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purchase p {
+  margin-bottom: 0;
+}
+.purchase p.p-user {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.purchase p.p-product {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+.purchase p.p-product a {
+  color: #000;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 700;
+}
+.purchase p.p-time {
+  line-height: 26px;
+  color: #aaa;
+}
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 {
     font-size: 1em !important;
