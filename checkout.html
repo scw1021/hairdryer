@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hair Dryer | Checkout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/select2/css/select2.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/flag-icon/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/lightbox/ekko-lightbox.css" />
+    <link rel="stylesheet" href="assets/css/hairdryer.css" />
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/fontawesome/css/fontawesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Start Top Nav -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
+      id="hairdryer_nav_top"
+    >
+      <div class="container">
+        <div class="w-100 d-flex justify-content-between flex-wrap">
+          <div
+            class="d-flex flex-wrap text-align justify-content-center align-items-center"
+          >
+            <div class="d-flex flex-row group-top my-2">
+              <div class="pr-2 mr-2">
+                <i class="fas fa-truck mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >FREE SHIPPING</a
+                >
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-certificate mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >100% MONEY BACK GUARANTEE</a
+                >
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="pr-2 mr-2">
+                <i class="fas fa-undo-alt mr-2"></i>
+                <a class="navbar-sm-brand text-decoration-none" href="#"
+                  >EASY RERTURN</a
+                >
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="pr-2 mr-2">
+                <i class="fas fa-mobile-alt mr-2"></i>
+                <a
+                  class="navbar-sm-brand text-decoration-none"
+                  href="tel:+44 123 456 789"
+                  >+44 123 456 789</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex select-group desktop flex-row align-items-center ml-auto"
+          >
+            <select class="d-inline-block" name="currency" id="currency">
+              <option value="eur">EUR (&#128;)</option>
+              <option value="gbp">GBP (&#163;)</option>
+              <option value="usd">USD (&#36;)</option>
+              <option value="cad">Canadian dollar</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+            </select>
+            <div class="dropdown d-inline-block ml-3 dropdown-country-language">
+              <div
+                class="dropdown-toggle"
+                id="country-language"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="flag-icon flag-icon-us"></span>
+                &nbsp;/ English
+              </div>
+              <div
+                id="country-language-menu"
+                class="dropdown-menu px-2 pt-4 pb-2"
+                aria-labelledby="country-language"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="country">
+                    <span class="pb-2 d-block">Country</span>
+                    <select class="form-control" name="country" id="country">
+                      <option value="us">United Status</option>
+                      <option value="de">Germany</option>
+                      <option value="it">Italy</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                      <option value="cn">Chinese</option>
+                      <option value="pl">Vietnam</option>
+                      <option value="pt">Portugal</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="language" class="form-label">
+                    <span class="pb-2 d-block">Language</span>
+                    <select class="form-control" name="language" id="language">
+                      <option value="en">English</option>
+                      <option value="de">Dutch</option>
+                      <option value="it">Italian</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/Logo-hair.png" class="logo" alt="" />
+          </a>
+        </div>
+
+        <div class="mobile">
+          <div
+            class="d-flex select-group mobile flex-row align-items-center ml-auto"
+          >
+            <select class="d-inline-block" name="currency" id="currency-mobile">
+              <option value="eur">EUR (&#128;)</option>
+              <option value="gbp">GBP (&#163;)</option>
+              <option value="usd">USD (&#36;)</option>
+              <option value="cad">Canadian dollar</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+              <option value="aud">Australian dollar</option>
+              <option value="jpa">Japanese dollar</option>
+              <option value="usd">Swiss franc</option>
+            </select>
+            <div class="dropdown d-inline-block ml-3 dropdown-country-language">
+              <div
+                class="dropdown-toggle"
+                id="country-language-mobile"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="flag-icon flag-icon-us"></span>
+              </div>
+              <div
+                id="country-language-menu-mobile"
+                class="dropdown-menu px-2 pt-4 pb-2"
+                aria-labelledby="country-language-mobile"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="country-mobile">
+                    <span class="pb-2 d-block">Country</span>
+                    <select
+                      class="form-control"
+                      name="country"
+                      id="country-mobile"
+                    >
+                      <option value="us">United Status</option>
+                      <option value="de">Germany</option>
+                      <option value="it">Italy</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                      <option value="cn">Chinese</option>
+                      <option value="pl">Vietnam</option>
+                      <option value="pt">Portugal</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="language-mobile" class="form-label">
+                    <span class="pb-2 d-block">Language</span>
+                    <select
+                      class="form-control"
+                      name="language"
+                      id="language-mobile"
+                    >
+                      <option value="en">English</option>
+                      <option value="de">Dutch</option>
+                      <option value="it">Italian</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <a class="nav-link text-light cart" href="#">
+              <img src="assets/img/cart.svg" alt="" />
+              <span class="cart-count">5</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto d-flex align-items-center">
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Catalog</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Track my order</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">My Account</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">About Us</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-light" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop">
+          <a class="nav-link text-light cart" href="#">
+            <img src="assets/img/cart.svg" alt="" />
+            <span class="cart-count">5</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Close Header -->
+
+    <div id="checkout" class="container my-5">
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <div class="h-100 text-center alert-yellow">
+            <h2>Your Order is reserved for 09:42 minutes!</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="h-100 alert-default">
+            <p>
+              All orders are processed in USD. While the content of your cart is
+              currently displayed in GBP, you will checkout using USD at the
+              most current exchange rate.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row form-wrapper">
+        <div class="col-lg-6">
+          <form action="" id="bill-form">
+            <div class="billing mb-5">
+              <h2>Billing Details</h2>
+              <p class="desc mb-4">Where Your Credit Card is Registered to</p>
+
+              <div class="form-group mb-4">
+                <label class="form-label" for="email"
+                  >Contact Info <span class="required">*</span></label
+                >
+                <input
+                  class="form-control mb-2"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+                <input
+                  class="form-control"
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6 form-group">
+                  <label class="form-label" for="first_name"
+                    >First Name <span class="required">*</span></label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="first_name"
+                    placeholder="First Name"
+                    name="first_name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <label class="form-label" for="last_name"
+                    >Last Name <span class="required">*</span></label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <label class="form-label" for="email"
+                  >Address <span class="required">*</span></label
+                >
+                <input
+                  class="form-control mb-2"
+                  type="text"
+                  id="street"
+                  name="street"
+                  placeholder="Street Address"
+                  required
+                />
+                <input
+                  class="form-control"
+                  type="text"
+                  id="suite"
+                  name="suite"
+                  placeholder="Apartment, suite, unit etc, (optional)"
+                />
+              </div>
+              <div class="form-group mb-4">
+                <label class="form-label" for="email"
+                  >Town / City <span class="required">*</span></label
+                >
+                <input
+                  class="form-control mb-2"
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Town / City"
+                  required
+                />
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6 form-group">
+                  <label class="form-label" for="b_country"
+                    >Country <span class="required">*</span></label
+                  >
+                  <select name="b_country" id="b_country" class="form-control">
+                    <option value="us">United Status</option>
+                    <option value="de">Germany</option>
+                    <option value="it">Italy</option>
+                    <option value="jp">Japanese</option>
+                    <option value="pl">Poland</option>
+                    <option value="pt">Portugal</option>
+                    <option value="cn">Chinese</option>
+                    <option value="pl">Vietnam</option>
+                    <option value="pt">Portugal</option>
+                    <option value="jp">Japanese</option>
+                    <option value="pl">Poland</option>
+                    <option value="pt">Portugal</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label class="form-label" for="postcode"
+                    >Postcode / Zip <span class="required">*</span></label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="postcode"
+                    name="postcode"
+                    placeholder="Postcode / Zip"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-3 d-flex align-items-center">
+                <input type="checkbox" id="create_account" />
+                <label class="form-label ml-3 mb-0" for="create_account">
+                  Create An Account?
+                </label>
+              </div>
+              <div class="form-group mb-3 d-flex align-items-center">
+                <input type="checkbox" id="ship_to" />
+                <label class="form-label ml-3 mb-0" for="ship_to">
+                  Ship to different address?
+                </label>
+              </div>
+            </div>
+            <div class="payments mb-5">
+              <h2>Payment Method</h2>
+
+              <div
+                class="form-group pt-4 pb-2 mb-4 border-light d-flex align-items-center"
+              >
+                <input
+                  class="form-radio"
+                  type="radio"
+                  id="creditcard"
+                  name="card_or_paypal"
+                />
+                <label class="form-label ml-3 mb-0" for="creditcard">
+                  Credit Card
+                </label>
+                <div class="card-icons d-inline-block ml-3">
+                  <img src="assets/img/cards.png" height="32px" alt="" />
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <label class="form-label" for="c_name"
+                  >Name ( as it appears on your card )</label
+                >
+                <input
+                  class="form-control mb-2"
+                  type="text"
+                  id="c_name"
+                  name="c_name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group mb-4">
+                <label class="form-label" for="c_number"
+                  >Credit Card Number ( no dashes or spaces )</label
+                >
+                <input
+                  class="form-control mb-2"
+                  type="text"
+                  id="c_number"
+                  name="c_number"
+                  placeholder="Credit Card Number"
+                />
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6 form-group">
+                  <label class="form-label" for="c_expire"
+                    >Expiration Date</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="c_expire"
+                    placeholder="Month/Year"
+                    name="c_expire"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <label class="form-label" for="c_code">Security Code</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="c_code"
+                    name="c_code"
+                    placeholder="Security Code"
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-3 d-flex align-items-center">
+                <input
+                  class="form-radio"
+                  type="radio"
+                  name="card_or_paypal"
+                  id="paypal"
+                />
+                <label class="form-label ml-3 mb-0" for="paypal">
+                  Paypal
+                </label>
+                <div class="card-icons d-inline-block ml-3">
+                  <img src="assets/img/paypal.png" height="32px" alt="" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="order mb-5">
+            <h2 class="mb-4">Your Order</h2>
+
+            <div class="table table-responsive table-borderless">
+              <table class="w-100">
+                <thead>
+                  <tr>
+                    <td class="w-40">PRODUCT</td>
+                    <td class="w-20">PRICE</td>
+                    <td class="w-10">QUANTITY</td>
+                    <td class="w-30">TOTAL</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="p-image mr-2"
+                          src="assets/img/product-5.jpg"
+                          width="40px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="p-name">Jersey Square.</p>
+                          <p class="p-sku">SKU: JSN014</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="p-price">$59 <small>$109</small></p>
+                      <p class="p-approx">Approx. &euro;29.99</p>
+                    </td>
+                    <td>01</td>
+                    <td>
+                      <p class="p-price">$59</p>
+                      <p class="p-approx">Approx. &euro;29.99</p>
+                    </td>
+                  </tr>
+                  <tr class="p-2 free-delivery border-bottom">
+                    <td colspan="3" class="pr-0">
+                      <p>Free Delivery</p>
+                    </td>
+                    <td class="pl-0">
+                      <p>$0.0</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="p-image mr-2"
+                          src="assets/img/product-5.jpg"
+                          width="40px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="p-name">Jersey Square.</p>
+                          <p class="p-sku">SKU: JSN014</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="p-price">$59 <small>$109</small></p>
+                      <p class="p-approx">Approx. &euro;29.99</p>
+                    </td>
+                    <td>01</td>
+                    <td>
+                      <p class="p-price">$59</p>
+                      <p class="p-approx">Approx. &euro;29.99</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="p-image mr-2"
+                          src="assets/img/product-5.jpg"
+                          width="40px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="p-name">Jersey Square.</p>
+                          <p class="p-sku">SKU: JSN014</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="p-price">$59 <small>$109</small></p>
+                      <p class="p-approx">Approx. &euro;29.99</p>
+                    </td>
+                    <td>01</td>
+                    <td>
+                      <p class="p-price">$59</p>
+                      <p class="p-approx">Approx. &euro;29.99</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="p-image mr-2"
+                          src="assets/img/product-5.jpg"
+                          width="40px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="p-name">Jersey Square.</p>
+                          <p class="p-sku">SKU: JSN014</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="p-price">$59 <small>$109</small></p>
+                      <p class="p-approx">Approx. &euro;29.99</p>
+                    </td>
+                    <td>01</td>
+                    <td>
+                      <p class="p-price">$59</p>
+                      <p class="p-approx">Approx. &euro;29.99</p>
+                    </td>
+                  </tr>
+                  <tr class="free-gift">
+                    <td colspan="3" class="px-0">
+                      <p>Free Delivery</p>
+                    </td>
+                    <td class="px-0">
+                      <p>$0.0</p>
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <td colspan="3">
+                      <p>Cart Subtotal</p>
+                    </td>
+                    <td>
+                      <p class="p-price">$345.00</p>
+                      <p class="p-approx">Approx. &euro;320.00</p>
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <td colspan="3">
+                      <p>Shipping and Handling</p>
+                    </td>
+                    <td>
+                      <p class="text-green">FREE</p>
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <td colspan="3">
+                      <p>Order Total</p>
+                    </td>
+                    <td>
+                      <p class="p-price text-pink">$350.00</p>
+                      <p class="p-approx">Approx. &euro;324.00</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="form-group mb-3 d-flex align-items-center p-2 mt-4 get-free-gift"
+            >
+              <input type="checkbox" id="create_account" />
+              <label class="form-label ml-3 mb-0" for="create_account">
+                Get a free gift
+              </label>
+            </div>
+            <form action="">
+              <div class="d-flex align-items-center apply-coupon">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="coupon"
+                  id="coupon"
+                  placeholder="Coupon Code..."
+                  required
+                />
+                <button class="cbtn cbtn-black px-2">APPLY COUPON</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="logos d-flex align-items-center mb-4">
+            <img
+              src="assets/img/norton.png"
+              class="mr-3"
+              height="50px"
+              alt=""
+            />
+            <img
+              src="assets/img/mcafee.png"
+              class="mr-3"
+              height="50px"
+              alt=""
+            />
+            <img src="assets/img/trust.png" class="mr-3" height="50px" alt="" />
+            <img src="assets/img/gold.png" class="mr-3" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 text-right mb-4">
+          <button class="cbtn cbtn-primary px-4" form="bill-form">
+            Complete Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 customers">
+      <h2 class="text-center mb-4">Our Happy Customers</h2>
+      <div class="row">
+        <div class="col-md-4 mb-5">
+          <div class="h-100 customer d-flex flex-column p-4">
+            <img src="assets/img/r-1.jpg" class="mb-2" alt="" />
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="title">I’ve Been Searching For this</p>
+            <p class="desc">
+              So Happy i decided to buy these, best quality i own. Highly
+              Recommend!
+            </p>
+            <p class="name">- Amanda Smoth</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="h-100 customer d-flex flex-column p-4">
+            <img src="assets/img/r-2.jpg" class="mb-2" alt="" />
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="title">The Best Purchase Ever!</p>
+            <p class="desc">
+              So Happy i decided to buy these, best quality i own. Highly
+              Recommend!
+            </p>
+            <p class="name">- Amanda Smoth</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="h-100 customer d-flex flex-column p-4">
+            <img src="assets/img/r-3.jpg" class="mb-2" alt="" />
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="title">Amazing Quality !!</p>
+            <p class="desc">
+              So Happy i decided to buy these, best quality i own. Highly
+              Recommend!
+            </p>
+            <p class="name">- Amanda Smoth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer id="hairdryer_footer">
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-md-5 pt-5 contacts">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/Logo-hair.png" class="logo" alt="" />
+            </a>
+            <ul class="list-unstyled footer-link-list mb-0">
+              <li>
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                12A, Wray Crescent London, N4 3LP
+              </li>
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                <a class="text-decoration-none" href="tel:+44 123 456 789">
+                  +44 123 456 789
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 pt-5 links">
+            <ul class="list-unstyled footer-link-list">
+              <li><a class="text-decoration-none" href="#">Privacy</a></li>
+              <li><a class="text-decoration-none" href="#">Terms</a></li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Refund & Return Policy</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#">Shipping Policy</a>
+              </li>
+              <li><a class="text-decoration-none" href="#">Affiliates</a></li>
+              <li><a class="text-decoration-none" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 pt-5 payments">
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-visa mx-3"></i>
+              <i class="fab fa-cc-mastercard"></i>
+            </div>
+            <div class="d-flex justify-content-around mb-4">
+              <i class="fab fa-cc-jcb"></i>
+              <i class="fab fa-cc-discover mx-3"></i>
+              <i class="fab fa-cc-amex"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 py-3 border-white border-top footer-bottom">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-md-6">
+              <p class="text-left all-rights">
+                Copyright 2020 - 2 in 1 Hair Dryer - All Rights Reserved
+              </p>
+            </div>
+            <div class="col-md-6 social-links">
+              <p class="text-right">
+                <a href="#" class="mr-3">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/select2/js/select2.full.min.js"></script>
+    <script src="assets/vendor/lightbox/ekko-lightbox.min.js"></script>
+    <script src="assets/js/hairdryer.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/checkout.js"></script>
+    <!-- End Script -->
+  </body>
+</html>
