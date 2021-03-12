@@ -1,0 +1,155 @@
+body {
+  background-color: #ebebeb;
+}
+#email {
+  width: 1000px;
+  padding-top: 100px;
+}
+#email .hotdeal {
+  font-size: 30px;
+  font-weight: 700;
+}
+#email .hotdeal i {
+  color: #f32261;
+}
+#email .body .heading {
+  background: #0072bc;
+  color: white;
+  background-image: url(../img/bg-cart.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 70%;
+}
+#email.abandon .body .heading {
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+#email.abandon .body .heading h1 {
+  color: #0072bc;
+}
+#email.abandon .body .heading h2 span {
+  text-decoration: underline;
+}
+#email .body {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#email .body p {
+  margin-bottom: 0;
+}
+#email .body p.table-heading {
+  background: #ebebeb;
+  border-radius: 10px;
+  font-weight: 700;
+}
+#email .body .btn-checkout {
+  outline: none;
+  padding: 15px 50px;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  background: #e27d32;
+  border-radius: 100px;
+  border: solid 1px #e27d32;
+  transition: all 1s;
+}
+#email .body .btn-checkout:hover {
+  color: #e27d32;
+  background: #fff;
+}
+#email .border-bottom {
+  border-color: #aaa !important;
+}
+#email .footer .copyright {
+  color: #888;
+}
+#email .footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 10px;
+}
+#email .footer ul li {
+  padding: 0 15px;
+  border-right: solid 1px #888;
+}
+#email .footer ul > li:last-child {
+  border-right: none !important;
+}
+#email .footer ul li a {
+  color: #000;
+}
+#email .product img {
+  object-position: top;
+  object-fit: cover;
+}
+#email .product .name {
+  font-size: 18px;
+  font-weight: 700;
+}
+#email .product .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #63942a;
+}
+#email .product .price small {
+  font-size: 14px;
+  color: #777;
+  text-decoration: line-through;
+}
+#email .product .sku {
+  font-size: 13px;
+  color: #777;
+}
+#email .product .btn-buy {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #63942a;
+  outline: none;
+  border: solid 1px #63942a;
+  padding: 7px;
+  transition: all 1s;
+}
+#email .product .btn-buy:hover {
+  background-color: #fff;
+  color: #63942a;
+}
+@media all and (max-width: 1200px) {
+  #email .product {
+    text-align: center;
+  }
+  #email .product img {
+    width: 200px;
+    margin-left: auto;
+  }
+  #email {
+    width: 100%;
+    padding-top: 30px;
+  }
+  #email .heading,
+  #email .content {
+    padding: 15px !important;
+    background-size: auto 100%;
+  }
+  #email h1 {
+    font-size: 25px;
+  }
+  #email h2 {
+    font-size: 20px;
+  }
+  #email h4 {
+    font-size: 18px;
+  }
+  #email .body .btn-checkout {
+    font-size: 16px;
+  }
+  #email .table {
+    padding: 10px !important;
+  }
+}
