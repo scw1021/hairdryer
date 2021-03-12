@@ -86,9 +86,10 @@ body {
   object-position: top;
   object-fit: cover;
 }
-#email .product .name {
+#email .product .name a {
   font-size: 18px;
   font-weight: 700;
+  color: #000;
 }
 #email .product .price {
   font-size: 18px;

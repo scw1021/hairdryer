@@ -47,6 +47,10 @@
 #checkout label span.required {
   color: red;
 }
+#checkout .order .p-name a {
+  color: #000;
+  font-size: 14px !important;
+}
 #checkout .order table {
   border: solid 1px #eee;
 }
