@@ -49,4 +49,8 @@ $(function () {
       $(".popup-content").addClass("hide");
     }
   });
+  $(".refuse").click(function () {
+    $(".popup").addClass("hide");
+    $(".popup-content").addClass("hide");
+  });
 });

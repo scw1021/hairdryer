@@ -26,10 +26,10 @@
     <link rel="stylesheet" href="assets/css/popup.css" />
 
     <!-- Load fonts style after rendering the layout styles -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="assets/vendor/fontawesome/css/fontawesome.min.css"
@@ -168,7 +168,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="assets/img/Logo-hair.png" class="logo" alt="" />
           </a>
         </div>
@@ -254,19 +254,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto d-flex align-items-center">
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">Catalog</a>
+              <a class="nav-link text-light" href="catalog.html">Catalog</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">Track my order</a>
+              <a class="nav-link text-light" href="track-my-order.html"
+                >Track my order</a
+              >
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">My Account</a>
+              <a class="nav-link text-light" href="my-orders.html"
+                >My Account</a
+              >
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">About Us</a>
+              <a class="nav-link text-light" href="about-us.html">About Us</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">Contact Us</a>
+              <a class="nav-link text-light" href="contact-us.html"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
@@ -281,32 +287,37 @@
     <!-- Close Header -->
 
     <div class="container py-5">
-      <div class="text-center mx-auto" id="popup-2">
-        <div class="row">
-          <div class="col-md-6 p-0 img-wrapper">
-            <img src="assets/img/popup-2.png" alt="" />
-          </div>
-          <div class="col-md-6 content">
-            <h1>Wait... Finish your order and get 10% OFF right now.</h1>
-            <p>
-              Sign up today for free and be the first to get notified of new
-              updates and you 10% OFF
-            </p>
-            <form action="">
-              <input
-                type="email"
-                class="form-control mb-2"
-                placeholder="Enter Your Email"
-                required
-              />
-              <div class="w-100 text-center mb-5">
-                <button class="cbtn cbtn-error cbtn-circle btn-activate">
-                  Activate Offer
-                </button>
-              </div>
-            </form>
-            <a href="#">No, I don't want this great deal now.</a>
-          </div>
+      <div class="mx-auto" id="popup-5">
+        <div
+          class="header text-center d-flex flex-column justify-content-center"
+        >
+          <img class="btn-close ml-auto" src="assets/img/close.svg" alt="" />
+          <img
+            class="icon-cart mx-auto"
+            src="assets/img/cart-plus.svg"
+            alt=""
+          />
+          <h1>Please enter your email</h1>
+          <h2>For a speedy checkout, please enter your email</h2>
+        </div>
+        <div class="form-body text-center">
+          <form action="">
+            <input
+              class="form-control mb-3 mx-auto"
+              type="text"
+              placeholder="First name"
+              required
+            />
+            <input
+              type="text"
+              class="form-control mb-3"
+              placeholder="Your email address"
+              required
+            />
+            <button class="cbtn cbtn-warning cbtn-circle px-5">
+              Add to cart
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -316,7 +327,7 @@
       <div class="container mb-4">
         <div class="row">
           <div class="col-md-5 pt-5 contacts">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img src="assets/img/Logo-hair.png" class="logo" alt="" />
             </a>
             <ul class="list-unstyled footer-link-list mb-0">
@@ -346,7 +357,11 @@
                 <a class="text-decoration-none" href="#">Shipping Policy</a>
               </li>
               <li><a class="text-decoration-none" href="#">Affiliates</a></li>
-              <li><a class="text-decoration-none" href="#">Contact Us</a></li>
+              <li>
+                <a class="text-decoration-none" href="contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
             </ul>
           </div>
 

@@ -121,7 +121,6 @@ $(function () {
   };
 
   $("#currency").change(function () {
-    console.log("asdf");
     $("#currency-mobile").val($(this).val());
     $("#currency-mobile").trigger("change.select2");
   });
@@ -138,6 +137,7 @@ $(function () {
     $(".select2-dropdown").css({ width: "200px" });
   });
 
+  // image variation with size and color, only for offer items
   var images = [
     "assets/img/Product-1.jpg",
     "assets/img/Product-2.jpg",
@@ -150,13 +150,16 @@ $(function () {
   ];
   $(".size select").change(function () {
     var img = images[Math.floor(Math.random() * images.length)];
+    $("img", $(this).parent().parent().parent()).attr("src", img);
     $("img", $(this).parent().parent()).attr("src", img);
   });
   $(".color select").change(function () {
     var img = images[Math.floor(Math.random() * images.length)];
+    $("img", $(this).parent().parent().parent()).attr("src", img);
     $("img", $(this).parent().parent()).attr("src", img);
   });
 
+  // popup with current purchased product, shows all on pages
   var purchaseHtml =
     '<div class="purchase hide">' +
     '<i class="fas fa-shopping-cart"></i>' +

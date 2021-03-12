@@ -26,10 +26,10 @@
     <link rel="stylesheet" href="assets/css/popup.css" />
 
     <!-- Load fonts style after rendering the layout styles -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
-    /> -->
+    />
     <link
       rel="stylesheet"
       href="assets/vendor/fontawesome/css/fontawesome.min.css"
@@ -168,7 +168,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="assets/img/Logo-hair.png" class="logo" alt="" />
           </a>
         </div>
@@ -201,6 +201,7 @@
                 aria-expanded="false"
               >
                 <span class="flag-icon flag-icon-us"></span>
+                &nbsp;/ English
               </div>
               <div
                 id="country-language-menu-mobile"
@@ -254,19 +255,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto d-flex align-items-center">
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">Catalog</a>
+              <a class="nav-link text-light" href="catalog.html">Catalog</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">Track my order</a>
+              <a class="nav-link text-light" href="track-my-order.html"
+                >Track my order</a
+              >
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">My Account</a>
+              <a class="nav-link text-light" href="my-orders.html"
+                >My Account</a
+              >
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">About Us</a>
+              <a class="nav-link text-light" href="about-us.html">About Us</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="#">Contact Us</a>
+              <a class="nav-link text-light" href="contact-us.html"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
@@ -281,38 +288,66 @@
     <!-- Close Header -->
 
     <div class="container py-5">
-      <div class="mx-auto" id="popup-5">
-        <div
-          class="header text-center d-flex flex-column justify-content-center"
-        >
-          <img class="btn-close ml-auto" src="assets/img/close.svg" alt="" />
-          <img
-            class="icon-cart mx-auto"
-            src="assets/img/cart-plus.svg"
-            alt=""
-          />
-          <h1>Please enter your email</h1>
-          <h2>For a speedy checkout, please enter your email</h2>
-        </div>
-        <div class="form-body text-center">
-          <form action="">
-            <input
-              class="form-control mb-3 mx-auto"
-              type="text"
-              placeholder="First name"
-              required
-            />
-            <input
-              type="text"
-              class="form-control mb-3"
-              placeholder="Your email address"
-              required
-            />
-            <button class="cbtn cbtn-warning cbtn-circle px-5">
-              Add to cart
+      <div class="text-center mx-auto" id="popup-3">
+        <h2>WAIT! YOUR ORDER IS NOT COMPLETE</h2>
+        <div class="divider my-3"></div>
+        <h1 class="mb-4 mx-auto">
+          Complete your look with Nike Tshirt at <b>20% Discount!</b>
+        </h1>
+
+        <button class="cbtn cbtn-dark cbtn-rounded mb-3 px-4">
+          ONLY AVAILABLE RIGHT NOW!
+        </button>
+
+        <div class="row mb-5">
+          <div class="col-md-5">
+            <div class="img"></div>
+          </div>
+          <div class="col-md-7 text-left">
+            <h3 class="mb-2 title">
+              <a href="#">Jersey Square Neck Top Black</a>
+            </h3>
+            <p class="stock">
+              <i class="fas fa-fire mr-2"></i>
+              Only 2 remain
+            </p>
+            <p class="desc mb-4">
+              Refresh a daytime profile with this lightweight jersey top from
+              our exclusive
+            </p>
+            <div class="star-rating w-100 mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$70.00</p>
+            <div class="size">
+              <select>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+            <div class="color">
+              <select>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+              </select>
+            </div>
+            <button class="cbtn cbtn-warning cbtn-block">
+              ADD TO ORDER AND COMPLETE
             </button>
-          </form>
+          </div>
         </div>
+        <a class="w-100 text-center pb-4 d-block" href="#"
+          >No, I don't want this great deal now.</a
+        >
       </div>
     </div>
 
@@ -321,7 +356,7 @@
       <div class="container mb-4">
         <div class="row">
           <div class="col-md-5 pt-5 contacts">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img src="assets/img/Logo-hair.png" class="logo" alt="" />
             </a>
             <ul class="list-unstyled footer-link-list mb-0">
@@ -351,7 +386,11 @@
                 <a class="text-decoration-none" href="#">Shipping Policy</a>
               </li>
               <li><a class="text-decoration-none" href="#">Affiliates</a></li>
-              <li><a class="text-decoration-none" href="#">Contact Us</a></li>
+              <li>
+                <a class="text-decoration-none" href="contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
             </ul>
           </div>
 
