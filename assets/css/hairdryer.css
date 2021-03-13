@@ -735,34 +735,6 @@ b {
   line-height: 20px;
   color: #aaa;
 }
-@media all and (max-width: 441px) {
-  .purchase p.p-user {
-    font-size: 8px;
-  }
-  .purchase p.p-product {
-    font-size: 8px;
-  }
-  .purchase p.p-product a {
-    font-size: 8px;
-  }
-  .purchase p.p-time {
-    font-size: 8px;
-  }
-  .group-top {
-    margin-bottom: 0 !important;
-  }
-  .group-top,
-  .group-bottom {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .mobile {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
 .text-pink {
   color: #f32261 !important;
 }
@@ -924,5 +896,37 @@ b {
 @media (max-width: 1200px) {
   .payments i {
     font-size: 50px;
+  }
+}
+
+@media all and (max-width: 441px) {
+  .offer img {
+    width: 100% !important;
+  }
+  .purchase p.p-user {
+    font-size: 8px;
+  }
+  .purchase p.p-product {
+    font-size: 8px;
+  }
+  .purchase p.p-product a {
+    font-size: 8px;
+  }
+  .purchase p.p-time {
+    font-size: 8px;
+  }
+  .group-top {
+    margin-bottom: 0 !important;
+  }
+  .group-top,
+  .group-bottom {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 }
