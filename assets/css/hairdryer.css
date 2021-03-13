@@ -323,6 +323,7 @@ nav.navbar {
 }
 .select2.select2-container .select2-selection {
   border: solid 1px #ccc !important;
+  padding-right: 20px;
 }
 .select2-container.select2-container--open {
   padding-top: 10px;
@@ -907,16 +908,16 @@ b {
     width: 100% !important;
   }
   .purchase p.p-user {
-    font-size: 8px;
+    font-size: 12px;
   }
   .purchase p.p-product {
-    font-size: 8px;
+    font-size: 12px;
   }
   .purchase p.p-product a {
-    font-size: 8px;
+    font-size: 12px;
   }
   .purchase p.p-time {
-    font-size: 8px;
+    font-size: 12px;
   }
   .group-top {
     margin-bottom: 0 !important;
@@ -942,5 +943,32 @@ b {
     display: block;
     width: 100%;
     text-align: center;
+  }
+  .purchase {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .purchase i.fa-shopping-cart {
+    font-size: 15px;
+    top: -23px;
+    left: -9px;
+    width: 40px;
+    box-shadow: 0 0px 26px rgb(0 0 0 / 20%);
+    height: 40px;
+  }
+  .purchase i.fa-times {
+    font-size: 15px;
+    top: 53px;
+    right: -9px;
+    width: 40px;
+    box-shadow: 0 0px 26px rgb(0 0 0 / 20%);
+    height: 40px;
+    background: #f71515;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 1;
   }
 }
