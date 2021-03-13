@@ -421,6 +421,45 @@
 }
 @media all and (max-width: 576px) {
 }
+@media all and (max-width: 441px) {
+  .logos {
+    flex-wrap: wrap !important;
+    align-items: center;
+  }
+  #products .product {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .ad-items .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .offer-counter .desc {
+    font-size: 0.9rem !important;
+  }
+  #cart .title,
+  .offer-counter .desc,
+  .offer-counter .figure,
+  .heading {
+    font-size: 0.9rem;
+  }
+  #customers .col-6 {
+    flex: 1 1 100% !important;
+    max-width: 100%;
+  }
+  .offer-counter .figure {
+    line-height: 1rem;
+  }
+  .offer-counter .separater {
+    line-height: 1rem;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  .offer-alert label {
+    font-size: 12px;
+  }
+}
+
 .btn-shake {
   -webkit-animation-name: shake;
   -webkit-animation-duration: 0.8s;

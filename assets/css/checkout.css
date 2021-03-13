@@ -130,3 +130,11 @@
     flex-direction: column-reverse;
   }
 }
+@media all and (max-width: 441px) {
+  #checkout .apply-coupon button {
+    flex: 0 1 100% !important;
+  }
+  #checkout .d-flex {
+    flex-wrap: wrap !important;
+  }
+}

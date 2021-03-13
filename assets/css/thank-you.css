@@ -119,6 +119,6 @@
     padding: 30px 15px;
   }
   #thank-you .quiz .deal-25 button {
-    width: 100%;
+    width: 100% !important;
   }
 }
