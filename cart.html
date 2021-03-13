@@ -338,7 +338,7 @@
             <div class="price">$59.00</div>
             <div class="quantity">
               <select name="quantity-1" id="quantity-1">
-                <option value="1">0</option>
+                <option value="0">0</option>
                 <option value="1" selected>1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -359,7 +359,7 @@
             <div class="price">$59.00</div>
             <div class="quantity">
               <select name="quantity-2" id="quantity-2">
-                <option value="1">0</option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3" selected>3</option>
@@ -380,7 +380,7 @@
             <div class="price">$59.00</div>
             <div class="quantity">
               <select name="quantity-3" id="quantity-3">
-                <option value="1">0</option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2" selected>2</option>
                 <option value="3">3</option>
@@ -401,7 +401,7 @@
             <div class="price">$59.00</div>
             <div class="quantity">
               <select name="quantity-4" id="quantity-4">
-                <option value="1">0</option>
+                <option value="0">0</option>
                 <option value="1" selected>1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -666,6 +666,40 @@
               Recommend!
             </p>
             <p class="name">- Amanda Smoth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal confirm to delete -->
+    <div class="modal confirm-delete" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Confirm</h5>
+            <button
+              type="button"
+              class="close btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Do you really want to remove this item?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="cbtn cbtn-warning btn-confirm px-3">
+              Confirm
+            </button>
+            <button
+              type="button"
+              class="cbtn cbtn-black btn-close px-3"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>

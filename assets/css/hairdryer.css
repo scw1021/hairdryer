@@ -786,6 +786,9 @@ b {
 .offer img:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
+.modal {
+  background: rgba(0, 0, 0, 0.3);
+}
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);

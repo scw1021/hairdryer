@@ -1,5 +1,6 @@
 $(function () {
   $("#checkout #b_country").select2({ minimumResultsForSearch: -1 });
+  $("#checkout #b_country_1").select2({ minimumResultsForSearch: -1 });
 
   $("#checkout #create_account").change(function () {
     $("#checkout .password").toggle();

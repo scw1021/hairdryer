@@ -79,6 +79,9 @@
   color: #f32261;
   padding: 0.75rem;
 }
+#checkout .select2.select2-container {
+  width: 100% !important;
+}
 #checkout .order table > tbody > tr.free-gift p {
   padding: 1.5rem 0.75rem;
 }
