@@ -71,6 +71,7 @@ body {
   justify-content: center;
   list-style: none;
   margin-bottom: 10px;
+  padding: 0;
 }
 #email .footer ul li {
   padding: 0 15px;

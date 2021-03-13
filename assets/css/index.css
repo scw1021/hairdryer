@@ -427,7 +427,7 @@
     align-items: center;
   }
   #products .product {
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
   }
   .ad-items .col-3 {
