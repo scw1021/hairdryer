@@ -460,7 +460,24 @@
   }
   .price-wrapper .col-6 {
     flex: 1 1 100% !important;
+    margin-top: 10px;
     max-width: 100%;
+  }
+  .price-wrapper .text-right {
+    text-align: left !important;
+  }
+  .price-wrapper .reveal {
+    width: calc(100% - 5px);
+  }
+  .price-wrapper .secret-price {
+    text-align: right;
+  }
+  .rating .text-right {
+    margin-top: 10px;
+    text-align: left !important;
+  }
+  .quantity-item {
+    font-size: 12px;
   }
 }
 

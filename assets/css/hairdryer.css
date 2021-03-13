@@ -961,10 +961,10 @@ b {
     top: 53px;
     right: -9px;
     width: 40px;
-    box-shadow: 0 0px 26px rgb(0 0 0 / 20%);
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 20%);
     height: 40px;
-    background: #f71515;
-    color: white;
+    background: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
