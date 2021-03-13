@@ -54,10 +54,10 @@
 }
 .to-reviews {
   cursor: pointer;
+  color: #000;
 }
 .to-reviews:hover {
   text-decoration: none;
-  color: #fff !important;
 }
 .carousel {
   position: relative;
