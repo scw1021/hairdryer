@@ -168,6 +168,9 @@ body {
   }
 }
 @media all and (max-width: 767px) {
+  #email .footer ul li {
+    border-right: none !important;
+  }
   #email table > tbody {
     font-size: 12px;
   }
