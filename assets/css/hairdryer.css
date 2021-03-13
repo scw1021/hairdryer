@@ -107,6 +107,9 @@ a:hover {
   background-color: #69bb7e;
   color: #fff;
 }
+.navbar-toggler.small {
+  display: none;
+}
 /* Nav */
 nav.navbar {
   background: #000 !important;
@@ -928,5 +931,16 @@ b {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+  }
+  .navbar-toggler.small {
+    display: block;
+  }
+  .navbar-toggler.big {
+    display: none;
+  }
+  .logo-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }

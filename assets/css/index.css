@@ -458,6 +458,10 @@
   .offer-alert label {
     font-size: 12px;
   }
+  .price-wrapper .col-6 {
+    flex: 1 1 100% !important;
+    max-width: 100%;
+  }
 }
 
 .btn-shake {

@@ -514,4 +514,11 @@ body {
     font-size: 10px;
     padding: 5px;
   }
+  .alarm {
+    padding: 26px 15px;
+  }
+  .alarm .fa-times {
+    right: 12px;
+    top: 8px;
+  }
 }
