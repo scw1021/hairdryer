@@ -91,7 +91,12 @@
 #checkout .apply-coupon input {
   padding: 20px;
 }
-
+#checkout .password {
+  display: none;
+}
+#checkout .address_1 {
+  display: none;
+}
 .customers .customer {
   text-align: center;
   align-items: center;

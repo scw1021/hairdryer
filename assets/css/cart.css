@@ -93,6 +93,7 @@
 }
 #offers .offer .title a {
   color: #000;
+  font-weight: 700;
 }
 #offers .offer .desc {
   line-height: 1.4;
@@ -171,8 +172,4 @@
   }
 }
 @media all and (max-width: 767px) {
-  #offers .offer img {
-    max-width: 250px;
-    margin-left: calc(50% - 125px) !important;
-  }
 }

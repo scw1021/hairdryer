@@ -37,6 +37,13 @@
   </head>
 
   <body>
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
     <!-- Start Top Nav -->
     <nav
       class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
@@ -68,13 +75,15 @@
                   >EASY RERTURN</a
                 >
               </div>
-              <div class="pr-2 mr-2">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
+              <a class="to-reviews">
+                <div class="pr-2 mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
               <div class="pr-2 mr-2">
                 <i class="fas fa-mobile-alt mr-2"></i>
                 <a
@@ -268,7 +277,7 @@
               </div>
             </div>
 
-            <a class="nav-link text-light cart" href="#">
+            <a class="nav-link cart" href="#">
               <img src="assets/img/cart.svg" alt="" />
               <span class="cart-count">5</span>
             </a>
@@ -278,30 +287,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto d-flex align-items-center">
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="catalog.html">Catalog</a>
+              <a class="nav-link" href="catalog.html">Catalog</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="track-my-order.html"
-                >Track my order</a
-              >
+              <a class="nav-link" href="track-my-order.html">Track my order</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="my-orders.html"
-                >My Account</a
-              >
+              <a class="nav-link" href="my-orders.html">My Account</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="about-us.html">About Us</a>
+              <a class="nav-link" href="about-us.html">About Us</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="contact-us.html"
-                >Contact Us</a
-              >
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
             </li>
           </ul>
         </div>
         <div class="desktop">
-          <a class="nav-link text-light cart" href="#">
+          <a class="nav-link cart" href="#">
             <img src="assets/img/cart.svg" alt="" />
             <span class="cart-count">5</span>
           </a>
@@ -352,7 +355,7 @@
                   type="text"
                   id="phone"
                   name="phone"
-                  placeholder="Phone Number"
+                  placeholder="Cell / Mobile Number"
                   required
                 />
               </div>
@@ -457,11 +460,114 @@
                   Create An Account?
                 </label>
               </div>
+              <div class="password">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="password"
+                      >Password <span class="required">*</span></label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="password"
+                      placeholder="Password"
+                      name="password"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="password_confirm"
+                      >Confirm Password <span class="required">*</span></label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="password_confirm"
+                      name="password_confirm"
+                      placeholder="Confirm Password"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
               <div class="form-group mb-3 d-flex align-items-center">
                 <input type="checkbox" id="ship_to" />
                 <label class="form-label ml-3 mb-0" for="ship_to">
                   Ship to different address?
                 </label>
+              </div>
+              <div class="address_1">
+                <div class="form-group mb-4">
+                  <label class="form-label" for="street_1"
+                    >Address <span class="required">*</span></label
+                  >
+                  <input
+                    class="form-control mb-2"
+                    type="text"
+                    id="street_1"
+                    name="street_1"
+                    placeholder="Street Address"
+                    required
+                  />
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="suite_1"
+                    name="suite_1"
+                    placeholder="Apartment, suite, unit etc, (optional)"
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="city_1"
+                    >Town / City <span class="required">*</span></label
+                  >
+                  <input
+                    class="form-control mb-2"
+                    type="text"
+                    id="city_1"
+                    name="city_1"
+                    placeholder="Town / City"
+                    required
+                  />
+                </div>
+                <div class="row mb-4">
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="b_country_1"
+                      >Country <span class="required">*</span></label
+                    >
+                    <select
+                      name="b_country"
+                      id="b_country_1"
+                      class="form-control"
+                    >
+                      <option value="us">United Status</option>
+                      <option value="de">Germany</option>
+                      <option value="it">Italy</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                      <option value="cn">Chinese</option>
+                      <option value="pl">Vietnam</option>
+                      <option value="pt">Portugal</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="postcode_1"
+                      >Postcode / Zip <span class="required">*</span></label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="postcode_1"
+                      name="postcode_1"
+                      placeholder="Postcode / Zip"
+                      required
+                    />
+                  </div>
+                </div>
               </div>
             </div>
             <div class="payments mb-5">
@@ -475,6 +581,7 @@
                   type="radio"
                   id="creditcard"
                   name="card_or_paypal"
+                  checked
                 />
                 <label class="form-label ml-3 mb-0" for="creditcard">
                   Credit Card
@@ -483,52 +590,62 @@
                   <img src="assets/img/cards.png" height="32px" alt="" />
                 </div>
               </div>
-              <div class="form-group mb-4">
-                <label class="form-label" for="c_name"
-                  >Name ( as it appears on your card )</label
-                >
-                <input
-                  class="form-control mb-2"
-                  type="text"
-                  id="c_name"
-                  name="c_name"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="form-group mb-4">
-                <label class="form-label" for="c_number"
-                  >Credit Card Number ( no dashes or spaces )</label
-                >
-                <input
-                  class="form-control mb-2"
-                  type="text"
-                  id="c_number"
-                  name="c_number"
-                  placeholder="Credit Card Number"
-                />
-              </div>
-              <div class="row mb-4">
-                <div class="col-md-6 form-group">
-                  <label class="form-label" for="c_expire"
-                    >Expiration Date</label
+              <div class="card-info">
+                <div class="form-group mb-4">
+                  <label class="form-label" for="c_name"
+                    >Name ( as it appears on your card )
+                    <span class="required">*</span></label
                   >
                   <input
-                    class="form-control"
+                    class="form-control mb-2"
                     type="text"
-                    id="c_expire"
-                    placeholder="Month/Year"
-                    name="c_expire"
+                    id="c_name"
+                    name="c_name"
+                    placeholder="Name"
+                    required
                   />
                 </div>
-                <div class="col-md-6 form-group">
-                  <label class="form-label" for="c_code">Security Code</label>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="c_number"
+                    >Credit Card Number ( no dashes or spaces )
+                    <span class="required">*</span></label
+                  >
                   <input
-                    class="form-control"
+                    class="form-control mb-2"
                     type="text"
-                    id="c_code"
-                    name="c_code"
-                    placeholder="Security Code"
+                    id="c_number"
+                    name="c_number"
+                    placeholder="Credit Card Number"
+                    required
                   />
+                </div>
+                <div class="row mb-4">
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="c_expire"
+                      >Expiration Date <span class="required">*</span></label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="c_expire"
+                      placeholder="Month/Year"
+                      name="c_expire"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="c_code"
+                      >Security Code <span class="required">*</span></label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="c_code"
+                      name="c_code"
+                      placeholder="Security Code"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
               <div class="form-group mb-3 d-flex align-items-center">
@@ -566,12 +683,13 @@
                   <tr>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img
-                          class="p-image mr-2"
-                          src="assets/img/product-5.jpg"
-                          width="40px"
-                          alt=""
-                        />
+                        <a href=""
+                          ><img
+                            class="p-image mr-2"
+                            src="assets/img/product-5.jpg"
+                            width="40px"
+                            alt=""
+                        /></a>
                         <div>
                           <p class="p-name"><a href="#">Jersey Square.</a></p>
                           <p class="p-sku">SKU: JSN014</p>
@@ -599,12 +717,13 @@
                   <tr>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img
-                          class="p-image mr-2"
-                          src="assets/img/product-5.jpg"
-                          width="40px"
-                          alt=""
-                        />
+                        <a href=""
+                          ><img
+                            class="p-image mr-2"
+                            src="assets/img/product-5.jpg"
+                            width="40px"
+                            alt=""
+                        /></a>
                         <div>
                           <p class="p-name"><a href="#">Jersey Square.</a></p>
                           <p class="p-sku">SKU: JSN014</p>
@@ -624,12 +743,13 @@
                   <tr>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img
-                          class="p-image mr-2"
-                          src="assets/img/product-5.jpg"
-                          width="40px"
-                          alt=""
-                        />
+                        <a href=""
+                          ><img
+                            class="p-image mr-2"
+                            src="assets/img/product-5.jpg"
+                            width="40px"
+                            alt=""
+                        /></a>
                         <div>
                           <p class="p-name"><a href="#">Jersey Square.</a></p>
                           <p class="p-sku">SKU: JSN014</p>
@@ -649,12 +769,13 @@
                   <tr>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img
-                          class="p-image mr-2"
-                          src="assets/img/product-5.jpg"
-                          width="40px"
-                          alt=""
-                        />
+                        <a href=""
+                          ><img
+                            class="p-image mr-2"
+                            src="assets/img/product-5.jpg"
+                            width="40px"
+                            alt=""
+                        /></a>
                         <div>
                           <p class="p-name"><a href="#">Jersey Square.</a></p>
                           <p class="p-sku">SKU: JSN014</p>

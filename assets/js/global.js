@@ -16,11 +16,11 @@ $(function () {
     width: "100%",
     minimumResultsForSearch: -1,
     templateResult: formatState,
-    templateSelection: formatState,
+    templateSelection: formatState
   });
   $("#language").select2({
     width: "100%",
-    minimumResultsForSearch: -1,
+    minimumResultsForSearch: -1
   });
 
   // country language selector action
@@ -58,11 +58,11 @@ $(function () {
     width: "100%",
     minimumResultsForSearch: -1,
     templateResult: formatState,
-    templateSelection: formatState,
+    templateSelection: formatState
   });
   $("#language-mobile").select2({
     width: "100%",
-    minimumResultsForSearch: -1,
+    minimumResultsForSearch: -1
   });
 
   // country language selector action
@@ -129,14 +129,6 @@ $(function () {
     $("#currency").trigger("change.select2");
   });
 
-  $("#select2-currency-container").click(function () {
-    $(".select2-dropdown").css({ width: "200px" });
-  });
-
-  $("#select2-currency-mobile-container").click(function () {
-    $(".select2-dropdown").css({ width: "200px" });
-  });
-
   // image variation with size and color, only for offer items
   var images = [
     "assets/img/Product-1.jpg",
@@ -146,7 +138,7 @@ $(function () {
     "assets/img/Product-5.jpg",
     "assets/img/Product-9.jpg",
     "assets/img/Product-10.jpg",
-    "assets/img/Product-12.jpg",
+    "assets/img/Product-12.jpg"
   ];
   $(".size select").change(function () {
     var img = images[Math.floor(Math.random() * images.length)];
@@ -158,6 +150,14 @@ $(function () {
     $("img", $(this).parent().parent().parent()).attr("src", img);
     $("img", $(this).parent().parent()).attr("src", img);
   });
+  $("#popup-3 .size select").change(function () {
+    var img = images[Math.floor(Math.random() * images.length)];
+    $("#popup-3 .img").css({ background: "url(" + img + ")" });
+  });
+  $("#popup-3 .color select").change(function () {
+    var img = images[Math.floor(Math.random() * images.length)];
+    $("#popup-3 .img").css({ background: "url(" + img + ")" });
+  });
 
   // popup with current purchased product, shows all on pages
   var purchaseHtml =
@@ -168,10 +168,11 @@ $(function () {
     'Recently purchased <b><a href="#">Athenley Zip-Up Hoodie</a></b>' +
     "</p>" +
     '<p class="p-time">2 minutes ago</p>' +
+    '<i class="fas fa-times close"></i>' +
     "</div>";
 
   $("body").append(purchaseHtml);
-  $(".purchase").click(function () {
+  $(".purchase i.fa-times").click(function () {
     $(".purchase").addClass("hide");
   });
   setInterval(function () {
@@ -180,4 +181,11 @@ $(function () {
       $(".purchase").addClass("hide");
     }, 5000);
   }, 10000);
+
+  setTimeout(function () {
+    $(".lds-ring").addClass("fade-up");
+    setTimeout(function () {
+      $(".lds-ring").hide();
+    }, 300);
+  }, 1000);
 });

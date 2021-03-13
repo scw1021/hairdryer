@@ -30,6 +30,12 @@ div {
   font-family: "Roboto", sans-serif;
   font-size: 22px !important;
 }
+a {
+  transition: all 0.4s;
+}
+a:hover {
+  color: #d5ab46 !important;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -271,9 +277,6 @@ nav.navbar {
 #hairdryer_footer .footer-bottomm {
   background-color: #000;
 }
-#hairdryer_footer a:hover {
-  color: #68bb7d;
-}
 #hairdryer_footer ul.footer-link-list li {
   padding-top: 10px;
 }
@@ -315,8 +318,8 @@ nav.navbar {
 .select2.select2-container {
   padding: 0 !important;
 }
-.select2.select2-container:hover .select2-selection {
-  border: solid 1px #aaa !important;
+.select2.select2-container .select2-selection {
+  border: solid 1px #ccc !important;
 }
 .select2-container.select2-container--open {
   padding-top: 10px;
@@ -392,7 +395,8 @@ nav.navbar {
   color: #000 !important;
 }
 .select2-results__option--selected {
-  color: #f32261 !important;
+  color: #d5ab46 !important;
+  background-color: #fff !important;
 }
 #country,
 #language,
@@ -668,24 +672,34 @@ b {
   font-weight: 700 !important;
 }
 .purchase {
-  height: 100px;
+  height: 80px;
   position: fixed;
   left: 15px;
-  top: calc(100vh - 115px);
+  top: calc(100vh - 95px);
   z-index: 1000;
   background-color: #fff;
   box-shadow: -2px 3px 8px 5px rgb(0 0 0 / 30%);
-  border-radius: 50px;
-  padding: 10px 30px 10px 100px;
+  border-radius: 40px;
+  padding: 10px 40px 10px 80px;
   transition: all 0.5s;
+}
+.purchase i.fa-times {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  font-size: 20px;
+  color: #000;
+}
+.purchase i.fa-times:hover {
+  color: #d5ab46;
 }
 .purchase.hide {
   transform: translate(-600px, 0px);
 }
-.purchase i {
-  width: 80px;
-  height: 80px;
-  font-size: 30px;
+.purchase i.fa-shopping-cart {
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
   color: white;
   background: #d5ab46;
   border-radius: 50%;
@@ -700,23 +714,25 @@ b {
   margin-bottom: 0;
 }
 .purchase p.p-user {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 20px;
 }
 .purchase p.p-product {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 20px;
 }
 .purchase p.p-product a {
   color: #000;
   text-decoration: underline;
   font-style: italic;
+  font-size: 14px;
   font-weight: 700;
 }
 .purchase p.p-time {
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
   color: #aaa;
 }
 .text-pink {
@@ -724,6 +740,59 @@ b {
 }
 .text-green {
   color: #7bc200 !important;
+}
+.select2-dropdown.select2-dropdown--below {
+  min-width: 200px !important;
+}
+.lds-ring {
+  background: #fff;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.lds-ring.fade-up {
+  opacity: 0;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #f32261;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #f32261 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+.offer img {
+  transition: all 0.5s;
+}
+.offer img:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 {
@@ -779,6 +848,19 @@ b {
   }
 }
 @media all and (max-width: 767px) {
+  .offer {
+    text-align: center !important;
+  }
+  .offer img {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    object-position: top !important;
+    background-position: top !important;
+  }
+  .offer .price {
+    justify-content: center;
+  }
   #hairdryer_footer {
     text-align: center;
     background-color: #000;

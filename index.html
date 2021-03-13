@@ -37,6 +37,13 @@
   </head>
 
   <body>
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
     <!-- Start Top Nav -->
     <nav
       class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
@@ -68,13 +75,15 @@
                   >EASY RERTURN</a
                 >
               </div>
-              <div class="pr-2 mr-2">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
+              <a class="to-reviews">
+                <div class="pr-2 mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
               <div class="pr-2 mr-2">
                 <i class="fas fa-mobile-alt mr-2"></i>
                 <a
@@ -268,7 +277,7 @@
               </div>
             </div>
 
-            <a class="nav-link text-light cart" href="#">
+            <a class="nav-link cart" href="#">
               <img src="assets/img/cart.svg" alt="" />
               <span class="cart-count">5</span>
             </a>
@@ -278,30 +287,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto d-flex align-items-center">
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="catalog.html">Catalog</a>
+              <a class="nav-link" href="catalog.html">Catalog</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="track-my-order.html"
-                >Track my order</a
-              >
+              <a class="nav-link" href="track-my-order.html">Track my order</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="my-orders.html"
-                >My Account</a
-              >
+              <a class="nav-link" href="my-orders.html">My Account</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="about-us.html">About Us</a>
+              <a class="nav-link" href="about-us.html">About Us</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="contact-us.html"
-                >Contact Us</a
-              >
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
             </li>
           </ul>
         </div>
         <div class="desktop">
-          <a class="nav-link text-light cart" href="#">
+          <a class="nav-link cart" href="#">
             <img src="assets/img/cart.svg" alt="" />
             <span class="cart-count">5</span>
           </a>
@@ -639,7 +642,7 @@
                 class="d-flex flex-column h-100 shipping-item text-center text-center"
               >
                 <img src="assets/img/box.svg" alt="" />
-                <p><b>305</b> remaining of 2000 sold</p>
+                <p><b>305</b> remaining of 10,000 sold</p>
               </div>
             </div>
           </div>
@@ -842,7 +845,9 @@
         </div>
         <div class="row btn-cart mb-5">
           <div class="col-md-3 mx-auto">
-            <button class="btn btn-block btn-buy">BUY NOW</button>
+            <button href="#cart" class="cbtn cbtn-block cbtn-warning btn-buy">
+              BUY NOW
+            </button>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 $(function () {
   $("#myCarousel").carousel({
-    interval: false,
+    interval: false
   });
   $("#carousel-thumbs").carousel({
-    interval: false,
+    interval: false
   });
 
   // handles the carousel thumbnails
@@ -62,7 +62,7 @@ $(function () {
     { id: 6, quantity: 7, price: 700 },
     { id: 7, quantity: 8, price: 800 },
     { id: 8, quantity: 9, price: 900 },
-    { id: 9, quantity: 10, price: 1000 },
+    { id: 9, quantity: 10, price: 1000 }
   ];
   $("#quantity").select2({
     minimumResultsForSearch: -1,
@@ -84,7 +84,7 @@ $(function () {
         data.price +
         "</b> &nbsp;&nbsp;(31% OFF)&nbsp;&nbsp;<span>BEST SELLER</span></div>";
       return $(html);
-    },
+    }
   });
   $("#quantity").change(function () {
     var amount = parseInt($(this).val()) + 1;
@@ -129,6 +129,12 @@ $(function () {
   }, 10000);
 
   $(".btn-buy").click(function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: $("#cart").position().top, behavior: "smooth" });
+  });
+  $(".to-reviews").click(function () {
+    window.scrollTo({
+      top: $("#customers").position().top,
+      behavior: "smooth"
+    });
   });
 });

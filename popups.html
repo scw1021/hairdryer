@@ -37,6 +37,13 @@
   </head>
 
   <body>
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
     <!-- Start Top Nav -->
     <nav
       class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
@@ -68,13 +75,15 @@
                   >EASY RERTURN</a
                 >
               </div>
-              <div class="pr-2 mr-2">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
+              <a class="to-reviews">
+                <div class="pr-2 mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
               <div class="pr-2 mr-2">
                 <i class="fas fa-mobile-alt mr-2"></i>
                 <a
@@ -129,6 +138,12 @@
                       <option value="jp">Japanese</option>
                       <option value="pl">Poland</option>
                       <option value="pt">Portugal</option>
+                      <option value="cn">Chinese</option>
+                      <option value="pl">Vietnam</option>
+                      <option value="pt">Portugal</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
                     </select>
                   </label>
                 </div>
@@ -139,6 +154,12 @@
                       <option value="en">English</option>
                       <option value="de">Dutch</option>
                       <option value="it">Italian</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
                       <option value="ja">Japanese</option>
                       <option value="pl">Polish</option>
                       <option value="pt">Portuguese</option>
@@ -221,6 +242,12 @@
                       <option value="jp">Japanese</option>
                       <option value="pl">Poland</option>
                       <option value="pt">Portugal</option>
+                      <option value="cn">Chinese</option>
+                      <option value="pl">Vietnam</option>
+                      <option value="pt">Portugal</option>
+                      <option value="jp">Japanese</option>
+                      <option value="pl">Poland</option>
+                      <option value="pt">Portugal</option>
                     </select>
                   </label>
                 </div>
@@ -238,13 +265,19 @@
                       <option value="ja">Japanese</option>
                       <option value="pl">Polish</option>
                       <option value="pt">Portuguese</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
+                      <option value="ja">Japanese</option>
+                      <option value="pl">Polish</option>
+                      <option value="pt">Portuguese</option>
                     </select>
                   </label>
                 </div>
               </div>
             </div>
 
-            <a class="nav-link text-light cart" href="#">
+            <a class="nav-link cart" href="#">
               <img src="assets/img/cart.svg" alt="" />
               <span class="cart-count">5</span>
             </a>
@@ -254,30 +287,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto d-flex align-items-center">
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="catalog.html">Catalog</a>
+              <a class="nav-link" href="catalog.html">Catalog</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="track-my-order.html"
-                >Track my order</a
-              >
+              <a class="nav-link" href="track-my-order.html">Track my order</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="my-orders.html"
-                >My Account</a
-              >
+              <a class="nav-link" href="my-orders.html">My Account</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="about-us.html">About Us</a>
+              <a class="nav-link" href="about-us.html">About Us</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link text-light" href="contact-us.html"
-                >Contact Us</a
-              >
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
             </li>
           </ul>
         </div>
         <div class="desktop">
-          <a class="nav-link text-light cart" href="#">
+          <a class="nav-link cart" href="#">
             <img src="assets/img/cart.svg" alt="" />
             <span class="cart-count">5</span>
           </a>
@@ -323,6 +350,12 @@
 
           <form action="">
             <input
+              type="text"
+              class="form-control email mb-2"
+              placeholder="First name"
+              required
+            />
+            <input
               type="email"
               class="form-control email mb-2"
               placeholder="Your email address"
@@ -350,6 +383,12 @@
                 updates and you 10% OFF
               </p>
               <form action="">
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="First name"
+                  required
+                />
                 <input
                   type="email"
                   class="form-control mb-2"
@@ -382,7 +421,7 @@
 
           <div class="row mb-5">
             <div class="col-md-5">
-              <div class="img"></div>
+              <a href=""><div class="img"></div></a>
             </div>
             <div class="col-md-7 text-left">
               <h3 class="mb-2 title">
@@ -465,7 +504,9 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="offer mb-4">
-                  <img src="assets/img/Product-13.jpg" alt="" width="100%" />
+                  <a href=""
+                    ><img src="assets/img/Product-13.jpg" alt="" width="100%"
+                  /></a>
                   <h3 class="mb-2 mt-3 title">
                     <a href="#">Sportswear Essential Hybrid</a>
                   </h3>
@@ -511,7 +552,9 @@
               </div>
               <div class="col-md-4">
                 <div class="offer mb-4">
-                  <img src="assets/img/Product-21.jpg" alt="" width="100%" />
+                  <a href=""
+                    ><img src="assets/img/Product-21.jpg" alt="" width="100%"
+                  /></a>
                   <h3 class="mb-2 mt-3 title">
                     <a href="#">Sportswear Essential Hybrid</a>
                   </h3>
@@ -561,7 +604,9 @@
               </div>
               <div class="col-md-4">
                 <div class="offer mb-4">
-                  <img src="assets/img/Product-31.jpg" alt="" width="100%" />
+                  <a href=""
+                    ><img src="assets/img/Product-31.jpg" alt="" width="100%"
+                  /></a>
                   <h3 class="mb-2 mt-3 title">
                     <a href="#">Grained Knitwear Beige</a>
                   </h3>
@@ -637,7 +682,7 @@
                 required
               />
               <button class="cbtn cbtn-warning cbtn-circle px-5">
-                Add to cart
+                Checkout
               </button>
             </form>
           </div>
@@ -718,7 +763,9 @@
               </p>
               <div class="col-lg-3 col-md-6">
                 <div class="offer mb-4">
-                  <img src="assets/img/Product-13.jpg" alt="" width="100%" />
+                  <a href=""
+                    ><img src="assets/img/Product-13.jpg" alt="" width="100%"
+                  /></a>
                   <h3 class="mb-2 mt-3 title">
                     <a href="#">Sportswear Essential Hybrid</a>
                   </h3>
@@ -764,7 +811,9 @@
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="offer mb-4">
-                  <img src="assets/img/Product-21.jpg" alt="" width="100%" />
+                  <a href=""
+                    ><img src="assets/img/Product-21.jpg" alt="" width="100%"
+                  /></a>
                   <h3 class="mb-2 mt-3 title">
                     <a href="#">Sportswear Essential Hybrid</a>
                   </h3>
@@ -814,7 +863,9 @@
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="offer mb-4">
-                  <img src="assets/img/Product-31.jpg" alt="" width="100%" />
+                  <a href=""
+                    ><img src="assets/img/Product-31.jpg" alt="" width="100%"
+                  /></a>
                   <h3 class="mb-2 mt-3 title">
                     <a href="#">Grained Knitwear Beige</a>
                   </h3>
@@ -860,7 +911,9 @@
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="offer mb-4">
-                  <img src="assets/img/Product-21.jpg" alt="" width="100%" />
+                  <a href=""
+                    ><img src="assets/img/Product-21.jpg" alt="" width="100%"
+                  /></a>
                   <h3 class="mb-2 mt-3 title">
                     <a href="#">Sportswear Essential Hybrid</a>
                   </h3>

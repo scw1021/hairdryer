@@ -52,6 +52,13 @@
   color: white;
   padding-top: 7px;
 }
+.to-reviews {
+  cursor: pointer;
+}
+.to-reviews:hover {
+  text-decoration: none;
+  color: #fff !important;
+}
 .carousel {
   position: relative;
 }

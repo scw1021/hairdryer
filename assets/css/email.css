@@ -13,7 +13,7 @@ body {
   color: #f32261;
 }
 #email .body .heading {
-  background: #0072bc;
+  background: #f32261;
   color: white;
   background-image: url(../img/bg-cart.png);
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
   text-align: center;
 }
 #email.abandon .body .heading h1 {
-  color: #0072bc;
+  color: #f32261;
 }
 #email.abandon .body .heading h2 span {
   text-decoration: underline;
@@ -46,17 +46,17 @@ body {
 }
 #email .body .btn-checkout {
   outline: none;
-  padding: 15px 50px;
-  font-size: 25px;
+  padding: 10px 50px;
+  font-size: 16px;
   font-weight: 700;
   color: white;
-  background: #e27d32;
+  background: #d5ab46;
   border-radius: 100px;
-  border: solid 1px #e27d32;
+  border: solid 1px #d5ab46;
   transition: all 1s;
 }
 #email .body .btn-checkout:hover {
-  color: #e27d32;
+  color: #d5ab46;
   background: #fff;
 }
 #email .border-bottom {
@@ -94,7 +94,7 @@ body {
 #email .product .price {
   font-size: 18px;
   font-weight: 700;
-  color: #63942a;
+  color: #f32261;
 }
 #email .product .price small {
   font-size: 14px;
@@ -108,18 +108,31 @@ body {
 #email .product .btn-buy {
   color: white;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
   border-radius: 10px;
-  background-color: #63942a;
+  background-color: #d5ab46;
   outline: none;
-  border: solid 1px #63942a;
+  border: solid 1px #d5ab46;
   padding: 7px;
   transition: all 1s;
 }
 #email .product .btn-buy:hover {
   background-color: #fff;
-  color: #63942a;
+  color: #d5ab46;
+}
+.w-10 {
+  width: 10% !important;
+}
+.w-20 {
+  width: 20% !important;
+}
+.w-45 {
+  width: 45% !important;
+}
+#email table > thead > tr > th,
+#email table > tbody > tr > td {
+  vertical-align: middle;
 }
 @media all and (max-width: 1200px) {
   #email .product {
@@ -152,5 +165,14 @@ body {
   }
   #email .table {
     padding: 10px !important;
+  }
+}
+@media all and (max-width: 767px) {
+  #email table > tbody {
+    font-size: 12px;
+  }
+  #email table > thead > tr > th,
+  #email table > tbody > tr > td {
+    padding: 5px;
   }
 }

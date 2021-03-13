@@ -33,6 +33,12 @@
   flex: 0 1 250px;
   padding: 30px;
 }
+#my-orders .product .img img {
+  transition: all 0.5s;
+}
+#my-orders .product .img img:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
 #my-orders .product .info {
   flex: 1 1 auto;
   padding: 30px;

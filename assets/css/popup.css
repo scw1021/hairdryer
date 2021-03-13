@@ -98,6 +98,9 @@ body {
   #popup-2 {
     width: 100%;
   }
+  #popup-2 .img-wrapper {
+    background: #febd2c;
+  }
   #popup-2 img {
     width: 60%;
   }
@@ -196,8 +199,12 @@ body {
     width: 100%;
   }
   #popup-3 .img {
-    margin-bottom: 30px;
-    height: 600px;
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    object-position: top !important;
+    background-position: top !important;
+    margin: 0 auto;
   }
   #popup-3 h1 {
     width: 100%;
@@ -252,7 +259,7 @@ body {
   color: white;
   text-align: center;
   padding: 15px;
-  background-color: #2c3e50;
+  background-color: #f32261;
   font-weight: 400;
   font-size: 1.875rem;
 }
@@ -280,6 +287,12 @@ body {
 }
 #popup-4 .checkout button {
   width: 180px;
+}
+#popup-3 .img {
+  transition: all 0.5s;
+}
+#popup-3 .img:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 @media all and (max-width: 767px) {
   #popup-4 {
@@ -433,8 +446,10 @@ body {
 #popup-7 a {
   text-decoration: underline !important;
   font-weight: 300;
-  color: #478ac9 !important;
   font-size: 0.87rem;
+}
+#popup-7 .offer .title a:hover {
+  color: #d5ab46 !important;
 }
 #popup-7 h1 {
   color: #f32261 !important;
