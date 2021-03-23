@@ -54,7 +54,7 @@ $(function () {
   // quantity select
   var dataQuantity = [
     { id: 0, quantity: 1, price: 100 },
-    { id: 1, quantity: 2, price: 200 },
+    { id: 1, quantity: 2, price: 200, selected: true },
     { id: 2, quantity: 3, price: 300 },
     { id: 3, quantity: 4, price: 400 },
     { id: 4, quantity: 5, price: 500 },
@@ -126,7 +126,7 @@ $(function () {
 
   setTimeout(function () {
     $(".btn-cart button").removeClass("btn-wobble");
-  }, 10000);
+  }, 5000);
 
   $(".btn-buy").click(function () {
     window.scrollTo({ top: $("#cart").position().top, behavior: "smooth" });

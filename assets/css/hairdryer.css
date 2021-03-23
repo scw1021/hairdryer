@@ -60,6 +60,9 @@ a:hover {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
+  #hairdryer_nav_top {
+    display: none !important;
+  }
 }
 /* General */
 .logo {
@@ -125,7 +128,7 @@ nav.navbar {
 }
 #hairdryer_nav_top {
   min-height: 55px;
-  display: flex !important;
+  display: flex;
   align-items: center;
   background: #fff !important;
 }
@@ -186,9 +189,15 @@ nav.navbar {
 .shop-top-menu a:hover {
   color: #69bb7e !important;
 }
+.mobile .navbar-brand.small {
+  display: none;
+}
 /* Product */
 .product-wap {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.nav-item.select-group {
+  display: none !important;
 }
 .product-wap .product-color-dot.color-dot-red {
   background: #f71515;
@@ -349,9 +358,11 @@ nav.navbar {
 .select2-container--open {
   /* min-width: 200px !important; */
 }
-#currency ~ .select2.select2-container,
-#currency-mobile ~ .select2.select2-container {
+#currency ~ .select2.select2-container {
   width: 100px !important;
+}
+#currency-mobile ~ .select2.select2-container {
+  width: auto !important;
 }
 .dropdown-menu#country-language,
 .dropdown-menu#country-language-mobile {
@@ -360,13 +371,20 @@ nav.navbar {
   box-shadow: 0 2px 18px rgb(0 0 0 / 40%);
   border-radius: 6px;
 }
+#country-language-mobile {
+  color: #fff;
+}
 #country-language-menu,
 #country-language-menu-mobile {
+  position: absolute;
   left: auto !important;
   right: 0 !important;
   box-shadow: 0 2px 18px rgb(0 0 0 / 40%);
   margin-top: 19px;
   border-radius: 6px;
+}
+#select2-currency-mobile-container {
+  color: #fff;
 }
 #select2-country-container,
 #select2-language-container,
@@ -841,13 +859,17 @@ b {
   }
   .select-group {
     margin: 0 0;
-    display: flex !important;
+    display: flex;
   }
   .logo {
     width: 250px;
   }
 }
 @media all and (max-width: 991px) {
+
+  .nav-item.select-group {
+    display: flex !important;
+  }
   .payments i {
     font-size: 40px;
   }
@@ -933,14 +955,15 @@ b {
     display: flex;
     justify-content: flex-end;
   }
+  .mobile .navbar-brand.small {
+    display: block;
+  }
   .navbar-toggler.small {
     display: block;
   }
-  .navbar-toggler.big {
-    display: none;
-  }
+
   .logo-wrapper {
-    display: block;
+    display: none;
     width: 100%;
     text-align: center;
   }
